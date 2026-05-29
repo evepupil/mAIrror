@@ -6,29 +6,30 @@
 
 ## Current Phase
 
-**Phase 1: MVP 基础设施搭建** — 基于 NextDevTpl 改造，搭建免费检测工具 + 营销官网
+**Phase 1: MVP 代码完成** — 7 个里程碑全部实现，待数据库连接后联调
 
 ## Milestones
 
 | ID | Milestone | Goal | Status | Priority | Depends On | Evidence |
 |----|-----------|------|--------|----------|------------|----------|
-| M1 | 免费检测工具 + Landing Page | 用户输入域名 → 实时返回可见性指标，作为获客漏斗入口 | active | P0 | — | M1-1 品牌重塑完成 (commit f4ba4d0, dea8a45) |
-| M2 | 用户系统 + 支付集成 | 注册/登录、OAuth、订阅支付（复用 NextDevTpl） | planned | P0 | M1 | — |
-| M3 | 品牌监测引擎 | 关键词设定、周期监测、结果存储、趋势分析 | planned | P0 | M2 | — |
-| M4 | 周报 + 通知系统 | 邮件周报、站内通知、异常告警 | planned | P1 | M3 | — |
-| M5 | 竞品对比 | 竞品管理、对比报告、可见性得分 | planned | P1 | M3 | — |
-| M6 | 就绪度审计 | llms.txt/robots.txt/JSON-LD/CWV/内容协商 5 维审计 | planned | P1 | M1 | — |
-| M7 | 改造方案咨询 | 审计→改造方案→实施服务的 upsell 流程 | planned | P2 | M5, M6 | — |
+| M1 | 免费检测工具 + Landing Page | 用户输入域名 → 实时返回可见性指标，作为获客漏斗入口 | done | P0 | — | b5bcc94, dea8a45 |
+| M2 | 用户系统 + 支付集成 | 注册/登录、OAuth、订阅支付（复用 NextDevTpl） | done | P0 | M1 | c31cd29 |
+| M3 | 品牌监测引擎 | 关键词设定、周期监测、结果存储、趋势分析 | done | P0 | M2 | 77866c0 |
+| M4 | 周报 + 通知系统 | 邮件周报、站内通知、异常告警 | done | P1 | M3 | d3bfe63 |
+| M5 | 竞品对比 | 竞品管理、对比报告、可见性得分 | done | P1 | M3 | d425825 |
+| M6 | 就绪度审计 | llms.txt/robots.txt/JSON-LD/CWV/内容协商 5 维审计 | done | P1 | M1 | 802143a |
+| M7 | 改造方案咨询 | 审计→改造方案→实施服务的 upsell 流程 | done | P2 | M5, M6 | 802143a |
 
 ## Active Work
 
-- **M1: 免费检测工具 + Landing Page** — Step 1/3: 品牌重塑完成，Step 2/3: 免费检测工具开发中
+- None. MVP Phase 1 code complete.
 
 ## Next Recommended Steps
 
-1. **项目初始化**: 基于 NextDevTpl 清除非核心模块（blog、pseo、credits），保留 auth/payment/mail/dashboard/storage 基础设施
-2. **数据模型设计**: 创建 `monitored_keyword`, `monitoring_result`, `competitor`, `audit_result` 等核心表
-3. **免费检测工具原型**: 域名输入 → Perplexity API 调用 → 5-8 项指标展示的 MVP 流程
+1. **数据库迁移**: 运行 `pnpm db:generate` + `pnpm db:migrate` 创建新增监测表
+2. **API Key 配置**: 配置 OPENAI_API_KEY, RESEND_API_KEY, INNGEST_EVENT_KEY
+3. **端到端测试**: 连接数据库后跑集成测试，验证检测→注册→支付→监测→报告完整链路
+4. **第一个真实客户**: 手动跑 5 个真实域名的检测和监测，积累案例数据
 
 ## Inbox
 
@@ -36,7 +37,7 @@
 |------|--------|--------|--------|
 | 定价具体数字（免费→付费价格差） | 需求 §10 | proposed | 产品负责人确认 |
 | 目标市场：中国优先 or 全球 | 需求 §10 | proposed | 产品负责人确认 |
-| MVP 是否需要全自动化监测 pipeline | 需求 §10 | proposed | 技术负责人 |
+| MVP 是否需要全自动化监测 pipeline | 需求 §10 | proposed | 技术负责人（代码已支持，需 API 配置后开启） |
 | 营销官网和工具同一域名还是独立站点 | 需求 §10 | proposed | 技术负责人 |
 | 白标报告支持 | 需求 §10 | proposed | — |
 
@@ -44,7 +45,7 @@
 
 | Item | Priority | Reason | Status |
 |------|----------|--------|--------|
-| 多 AI 平台覆盖（Perplexity + OpenAI + Claude + Bing） | P1 | 首批仅 Perplexity，后续扩展 | planned |
+| 多 AI 平台覆盖（Perplexity + OpenAI + Claude + Bing） | P1 | 首批仅 OpenAI，后续扩展 | planned |
 | 内容营销（博客/HN/PH） | P1 | 获客渠道 P1 优先级 | planned |
 | 社区渗透（IH/Twitter/Reddit/V2EX） | P1 | 获客渠道 P1 优先级 | planned |
 | 手动挖前 20 个客户 | P0 | 获客渠道 P0 优先级 | planned |
@@ -71,7 +72,8 @@
 
 ## Recent Progress
 
-- 2026-05-29: M1-1 品牌重塑完成 — site config, i18n messages(89节重写), nav, logo, pricing
+- 2026-05-29: 全部 7 个里程碑代码完成 (M1-M7)，commits: d3bfe63 → 802143a
+- 2026-05-29: M1-1 品牌重塑完成 — site config, i18n messages, nav, logo, pricing
 - 2026-05-29: 需求文档完成（docs/requirements.md），明确产品定位、功能范围、MVP 路线
 - 2026-05-29: Git 仓库初始化，基于 NextDevTpl 代码库
 - 2026-05-29: 项目 Roadmap 创建

@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
-import { Coins, Headset, Settings } from "lucide-react";
+import { Coins, Headset, Settings, Activity } from "lucide-react";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
@@ -60,6 +60,12 @@ export default async function DashboardPage() {
 
       {/* Quick Links */}
       <div className="flex flex-wrap gap-4">
+        <Button asChild variant="outline" size="lg">
+          <Link href="/dashboard/monitoring">
+            <Activity className="mr-2 h-5 w-5" />
+            Monitoring
+          </Link>
+        </Button>
         <Button asChild variant="outline" size="lg">
           <Link href="/dashboard/credits">
             <Coins className="mr-2 h-5 w-5" />

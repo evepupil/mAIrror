@@ -14,7 +14,7 @@ export { getMyPlanAction } from "./actions";
 export {
   getUserPlan,
   getUserPlanType,
-  checkFileSizePrivilege,
+  checkKeywordPrivilege,
   type UserPlanInfo,
   type PrivilegeCheckResult,
 } from "./services/user-plan";

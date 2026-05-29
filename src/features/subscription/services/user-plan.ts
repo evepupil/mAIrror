@@ -12,8 +12,6 @@ import {
   type SubscriptionPlan,
   getPlanFromPriceId,
   getPlanPrivileges,
-  isWithinFileSizeLimit,
-  formatFileSizeLimit,
   getUpgradeMessage,
 } from "@/config/subscription-plan";
 
@@ -155,28 +153,25 @@ export async function getUserPlanType(
 // ============================================
 
 /**
- * 检查文件大小是否在用户计划限制内
- *
- * @param userId - 用户 ID
- * @param fileSizeBytes - 文件大小（字节）
- * @returns 检查结果
+ * 检查用户是否还有关键词配额
  */
-export async function checkFileSizePrivilege(
+export async function checkKeywordPrivilege(
   userId: string,
-  fileSizeBytes: number,
+  currentKeywordCount: number,
 ): Promise<PrivilegeCheckResult> {
   const { plan } = await getUserPlan(userId);
+  const priv = getPlanPrivileges(plan);
 
-  if (isWithinFileSizeLimit(plan, fileSizeBytes)) {
+  if (currentKeywordCount < priv.maxKeywords) {
     return { allowed: true };
   }
 
-  const limit = formatFileSizeLimit(plan);
-  const actualSize = `${(fileSizeBytes / (1024 * 1024)).toFixed(1)}MB`;
-
   return {
     allowed: false,
-    errorMessage: `File size (${actualSize}) exceeds ${limit} limit for your plan.`,
-    upgradeMessage: getUpgradeMessage(plan, `Files over ${limit}`),
+    errorMessage: `Keyword limit (${priv.maxKeywords}) reached for your plan.`,
+    upgradeMessage: getUpgradeMessage(
+      plan,
+      `More than ${priv.maxKeywords} keywords`,
+    ),
   };
 }

@@ -184,7 +184,7 @@ export function BillingSection() {
             <div>
               <p className="text-muted-foreground">{t("currentPlan.monthlyCredits")}</p>
               <p className="font-medium">
-                {planConfig.monthlyCredits.toLocaleString()} credits
+                {planConfig.maxKeywords} keywords
               </p>
             </div>
             <div>

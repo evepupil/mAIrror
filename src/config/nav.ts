@@ -1,4 +1,5 @@
 import {
+  Activity,
   Bot,
   Coins,
   CreditCard,
@@ -150,6 +151,11 @@ export const dashboardNav: NavGroup[] = [
         title: "Dashboard",
         href: "/dashboard",
         icon: LayoutDashboard,
+      },
+      {
+        title: "Monitoring",
+        href: "/dashboard/monitoring",
+        icon: Activity,
       },
       {
         title: "Credits",

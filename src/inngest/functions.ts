@@ -1,13 +1,9 @@
 import { inngest } from "./client";
 import { logger } from "@/lib/logger";
+import { monitoringFunctions } from "@/features/monitoring";
 
 /**
  * Hello World 示例函数
- *
- * 演示 Inngest 后台任务的基本用法：
- * 1. 前端通过 inngest.send() 发送事件
- * 2. Inngest 函数在后台异步执行
- * 3. 使用 step.run() 进行可靠的步骤执行（支持重试）
  */
 export const helloWorld = inngest.createFunction(
   {
@@ -27,6 +23,5 @@ export const helloWorld = inngest.createFunction(
 
 /**
  * 导出所有 Inngest 函数
- * 在 src/app/api/inngest/route.ts 中注册
  */
-export const functions = [helloWorld];
+export const functions = [helloWorld, ...monitoringFunctions];

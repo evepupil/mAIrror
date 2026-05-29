@@ -516,3 +516,158 @@ export type TicketPriority = (typeof ticketPriorityEnum.enumValues)[number];
 /** 工单状态类型 */
 export type TicketStatus = (typeof ticketStatusEnum.enumValues)[number];
 
+// ============================================
+// 品牌监测表
+// ============================================
+
+/**
+ * 监测关键词表
+ * 用户设定的品牌关键词，系统定期查询 AI 平台
+ */
+export const monitoredKeyword = pgTable("monitored_keyword", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  keyword: text("keyword").notNull(),
+  enabled: boolean("enabled").notNull().default(true),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
+});
+
+export type MonitoredKeyword = typeof monitoredKeyword.$inferSelect;
+export type NewMonitoredKeyword = typeof monitoredKeyword.$inferInsert;
+
+/**
+ * 监测结果表 (append-only)
+ * 每次 AI 平台查询的结果，历史数据只增不删
+ */
+export const monitoringResult = pgTable("monitoring_result", {
+  id: text("id").primaryKey(),
+  keywordId: text("keyword_id")
+    .notNull()
+    .references(() => monitoredKeyword.id, { onDelete: "cascade" }),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  platform: text("platform").notNull(),
+  /** 可见性得分 (0-100) */
+  visibilityScore: integer("visibility_score").notNull(),
+  /** 提及率 (0-100) */
+  mentionRate: integer("mention_rate").notNull(),
+  /** 情感分析结果 */
+  sentiment: text("sentiment").notNull(),
+  /** AI 引用片段 */
+  snippet: text("snippet"),
+  /** 原始响应 JSON */
+  rawResponse: json("raw_response"),
+  /** 查询时使用的 prompt 变体数量 */
+  promptVariants: integer("prompt_variants").notNull().default(20),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export type MonitoringResult = typeof monitoringResult.$inferSelect;
+export type NewMonitoringResult = typeof monitoringResult.$inferInsert;
+
+/**
+ * 竞品表
+ * 用户设定的竞品域名列表
+ */
+export const competitor = pgTable("competitor", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  domain: text("domain").notNull(),
+  label: text("label"),
+  enabled: boolean("enabled").notNull().default(true),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export type Competitor = typeof competitor.$inferSelect;
+export type NewCompetitor = typeof competitor.$inferInsert;
+
+/**
+ * 竞品监测结果表 (append-only)
+ */
+export const competitorResult = pgTable("competitor_result", {
+  id: text("id").primaryKey(),
+  competitorId: text("competitor_id")
+    .notNull()
+    .references(() => competitor.id, { onDelete: "cascade" }),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  keywordId: text("keyword_id")
+    .notNull()
+    .references(() => monitoredKeyword.id, { onDelete: "cascade" }),
+  platform: text("platform").notNull(),
+  visibilityScore: integer("visibility_score").notNull(),
+  mentionRate: integer("mention_rate").notNull(),
+  snippet: text("snippet"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export type CompetitorResult = typeof competitorResult.$inferSelect;
+export type NewCompetitorResult = typeof competitorResult.$inferInsert;
+
+/**
+ * 可见性报告表
+ * 周报/月报记录
+ */
+export const visibilityReport = pgTable("visibility_report", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  /** weekly | monthly */
+  type: text("type").notNull(),
+  /** JSON 报告数据 */
+  reportData: json("report_data").notNull(),
+  sentAt: timestamp("sent_at"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export type VisibilityReport = typeof visibilityReport.$inferSelect;
+export type NewVisibilityReport = typeof visibilityReport.$inferInsert;
+
+/**
+ * 就绪度审计结果表
+ */
+export const auditResult = pgTable("audit_result", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  domain: text("domain").notNull(),
+  /** JSON 审计数据 */
+  auditData: json("audit_data").notNull(),
+  overallScore: integer("overall_score").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export type AuditResult = typeof auditResult.$inferSelect;
+export type NewAuditResult = typeof auditResult.$inferInsert;
+
+/**
+ * 告警规则表
+ */
+export const alertRule = pgTable("alert_rule", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => user.id, { onDelete: "cascade" }),
+  keywordId: text("keyword_id")
+    .notNull()
+    .references(() => monitoredKeyword.id, { onDelete: "cascade" }),
+  /** 下降阈值 (百分比) */
+  threshold: integer("threshold").notNull().default(30),
+  /** 连续周数 */
+  consecutiveWeeks: integer("consecutive_weeks").notNull().default(2),
+  enabled: boolean("enabled").notNull().default(true),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+export type AlertRule = typeof alertRule.$inferSelect;
+export type NewAlertRule = typeof alertRule.$inferInsert;
+

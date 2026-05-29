@@ -8,6 +8,7 @@ import {
   monitoringResult,
   alertRule,
   visibilityReport,
+  competitor,
 } from "@/db/schema";
 import { inngest } from "@/inngest/client";
 import { logger } from "@/lib/logger";
@@ -246,4 +247,78 @@ export const checkVisibilityAlerts = inngest.createFunction(
   },
 );
 
-export const reportFunctions = [generateWeeklyReports, checkVisibilityAlerts];
+/**
+ * 竞品对比报告生成
+ * 每月 1 号执行
+ */
+export const generateCompetitorReports = inngest.createFunction(
+  {
+    id: "reports/competitor-monthly",
+    retries: 1,
+  },
+  { cron: "0 9 1 * *" },
+  async ({ step }) => {
+    const results = await step.run("generate-competitor-reports", async () => {
+      const users = await db
+        .select({ id: user.id, name: user.name, email: user.email })
+        .from(user)
+        .where(eq(user.banned, false))
+        .limit(50);
+
+      const reportSummaries: Array<{
+        userId: string;
+        competitorCount: number;
+        keywordCount: number;
+      }> = [];
+
+      for (const u of users) {
+        const competitors = await db
+          .select()
+          .from(competitor)
+          .where(eq(competitor.userId, u.id));
+
+        if (competitors.length === 0) continue;
+
+        const keywords = await db
+          .select()
+          .from(monitoredKeyword)
+          .where(
+            and(
+              eq(monitoredKeyword.userId, u.id),
+              eq(monitoredKeyword.enabled, true),
+            ),
+          );
+
+        reportSummaries.push({
+          userId: u.id,
+          competitorCount: competitors.length,
+          keywordCount: keywords.length,
+        });
+
+        await db.insert(visibilityReport).values({
+          id: nanoid(),
+          userId: u.id,
+          type: "monthly",
+          reportData: {
+            competitors: competitors.map((c) => ({
+              domain: c.domain,
+              label: c.label,
+            })),
+            keywords: keywords.map((k) => ({
+              keyword: k.keyword,
+              id: k.id,
+            })),
+            generatedAt: new Date().toISOString(),
+          },
+          createdAt: new Date(),
+        });
+      }
+
+      return reportSummaries;
+    });
+
+    return { reportsGenerated: results.length };
+  },
+);
+
+export const reportFunctions = [generateWeeklyReports, checkVisibilityAlerts, generateCompetitorReports];

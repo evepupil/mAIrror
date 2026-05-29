@@ -1,6 +1,6 @@
 import { inngest } from "./client";
 import { logger } from "@/lib/logger";
-import { monitoringFunctions } from "@/features/monitoring";
+import { monitoringFunctions, reportFunctions } from "@/features/monitoring";
 
 /**
  * Hello World 示例函数
@@ -24,4 +24,4 @@ export const helloWorld = inngest.createFunction(
 /**
  * 导出所有 Inngest 函数
  */
-export const functions = [helloWorld, ...monitoringFunctions];
+export const functions = [helloWorld, ...monitoringFunctions, ...reportFunctions];

@@ -1,17 +1,17 @@
 <p align="center">
   <br>
-  <img src="public/logo.svg" alt="NextDevTpl" width="120">
+  <img src="public/logo.svg" alt="mairror" width="120">
   <br>
-  <h1 align="center">NextDevTpl</h1>
+  <h1 align="center">mAIrror</h1>
   <p align="center">
-    The production-ready Next.js SaaS starter — launch your SaaS in hours, not weeks.
+    AI Brand Visibility Monitoring — see how AI search engines describe your brand, track competitors, and get actionable improvement plans.
   </p>
   <p align="center">
-    <a href="https://github.com/evepupil/NextDevTpl/blob/master/LICENSE">
+    <a href="https://github.com/evepupil/mAIrror/blob/master/LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
     </a>
     <a href="https://nextjs.org/">
-      <img src="https://img.shields.io/badge/Next.js-15-black?logo=nextdotjs" alt="Next.js 15">
+      <img src="https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs" alt="Next.js 16">
     </a>
     <a href="https://www.typescriptlang.org/">
       <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript 5">
@@ -19,13 +19,10 @@
     <a href="https://tailwindcss.com/">
       <img src="https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?logo=tailwindcss" alt="Tailwind CSS 4">
     </a>
-    <a href="https://pnpm.io/">
-      <img src="https://img.shields.io/badge/pnpm-9-orange?logo=pnpm" alt="pnpm">
-    </a>
   </p>
   <p align="center">
-    <a href="#-features">Features</a> •
-    <a href="#-why-nextdevtpl">Why NextDevTpl?</a> •
+    <a href="#-what-is-mairror">What is mairror?</a> •
+    <a href="#-how-it-works">How It Works</a> •
     <a href="#-quick-start">Quick Start</a> •
     <a href="#-project-structure">Structure</a> •
     <a href="#-deployment">Deployment</a>
@@ -34,48 +31,59 @@
 
 ---
 
-## 🚀 Features
+## What is mairror?
+
+mairror (mAIrror) is an **AI Brand Visibility Monitoring** service. It helps you understand how AI platforms perceive your brand:
+
+- **Free Instant Scan** — enter a domain, get a real-time visibility report across AI platforms
+- **Continuous Monitoring** — track brand keyword visibility week over week with trend charts
+- **Competitive Intelligence** — compare your AI visibility against competitors
+- **Readiness Audit** — 5-dimension technical audit (llms.txt, robots.txt, JSON-LD, Core Web Vitals, content)
+- **Weekly Reports** — automated email reports with visibility scores and change tracking
+- **Alerts** — notified when your brand visibility drops significantly
+
+### How It's Different
+
+Traditional SEO tools track Google rankings. mairror tracks **AI platform visibility** — how ChatGPT, Perplexity, Claude, and Bing Copilot describe and reference your brand. AI search results are non-deterministic, so we measure **mention rate** (how often your brand appears across prompt variants) rather than "rankings".
+
+## How It Works
+
+```
+1. Enter your domain → instant free scan (no signup)
+2. See your AI visibility score across platforms
+3. Sign up to monitor keywords weekly
+4. Get automated reports + competitor analysis
+5. Run readiness audits to improve AI discoverability
+```
+
+## Features
 
 | Category | Highlights |
 |----------|-----------|
-| **Framework** | Next.js 15 (App Router, Turbopack), React 19, TypeScript |
+| **Framework** | Next.js 16 (App Router, Turbopack), React 19, TypeScript |
 | **Styling** | Tailwind CSS 4, Shadcn/UI, Radix UI, dark mode |
 | **Database** | PostgreSQL, Drizzle ORM, Neon serverless |
-| **Auth** | Better Auth — email/password, GitHub/Google OAuth, role-based access |
+| **Auth** | Better Auth — email/password, Google OAuth, role-based access |
 | **Payments** | Creem subscription billing, webhooks, multi-tier pricing |
-| **Credits** | Double-entry FIFO system with batch expiration tracking |
-| **Email** | Resend delivery, React Email templates, dev preview |
-| **Storage** | S3 / Cloudflare R2 compatible, presigned uploads |
-| **Support** | Ticket system with threaded conversations |
-| **Admin** | Dashboard, user CRUD, credit top-ups, ticket management |
-| **i18n** | ~~next-intl~~ full en/zh bilingual routing |
-| **AI** | ~~Remove~~ multi-provider chat (OpenAI, DeepSeek, MiMo) |
-| **Rate Limiting** | Upstash Redis sliding window — automatically falls back to no-op when unconfigured |
-| **Logging** | Pino structured logging → Axiom cloud — gracefully degrades to console |
-| **Monitoring** | Sentry error tracking — auto-capture, user context, console fallback |
-| **Async Jobs** | Inngest background queue with graceful degradation |
+| **Monitoring** | AI brand visibility scanning, keyword tracking, trend charts |
+| **Competitors** | Side-by-side visibility comparison, monthly reports |
+| **Audits** | 5-dimension AI readiness: llms.txt, robots.txt, JSON-LD, CWV, content |
+| **Reports** | Weekly email reports, monthly competitor reports, alert notifications |
+| **Email** | Resend delivery, React Email templates |
+| **Async Jobs** | Inngest background queue — scheduled monitoring, report generation, alerts |
+| **i18n** | full en/zh bilingual routing via next-intl |
+| **Rate Limiting** | Upstash Redis sliding window — gracefully degrades when unconfigured |
+| **Logging** | Pino structured logging → Axiom cloud — console fallback |
+| **Monitoring** | Sentry error tracking — auto-capture, user context, graceful degradation |
 | **Tooling** | Biome (lint + format), pnpm, strict TypeScript |
 
 > **Graceful degradation** — every optional service (rate limiting, logging, monitoring, async jobs) falls back to a safe local mode when its environment variable is missing. Start with 3 env vars and add services incrementally.
 
-## ✨ Why NextDevTpl?
-
-| | NextDevTpl | Other SaaS Templates |
-|---|---|---|
-| **AI integration** | Multi-provider, built-in | None or bolted on |
-| **Double-entry credits** | FIFO + batch expiry | Shallow balance field |
-| **i18n** | Full en/zh routing | Partial or add-on |
-| **Async jobs** | Inngest, no blocking calls | Requests block on I/O |
-| **Graceful degradation** | Every optional service self-silences | Hard dependency on Redis / Sentry / etc. |
-| **Feature-based code** | `features/auth/`, `features/credits/` | Flat or role-based folders |
-| **Real payment integration** | Creem (not Stripe mock) | Placeholder events |
-| **PSEO demo** | ~~AnkiGenix~~ Phoenix-style programmatic SEO | None |
-
-## 📦 Tech Stack
+## Tech Stack
 
 ```mermaid
 graph TD
-    Client[Browser / Client] --> Next["Next.js 15<br/>App Router + Server Actions"]
+    Client[Browser / Client] --> Next["Next.js 16<br/>App Router + Server Actions"]
     Next --> Auth[Better Auth]
     Next --> DB[("PostgreSQL<br/>Drizzle ORM")]
     Next --> Mail[Resend + React Email]
@@ -85,16 +93,16 @@ graph TD
     Next --> Jobs[Inngest Queue]
     Next --> Log[Pino → Axiom]
     Next --> Monitor[Sentry]
-    Next --> AI["AI<br/>OpenAI / DeepSeek / MiMo"]
+    Next --> AI["AI<br/>OpenAI / Perplexity"]
 ```
 
-## 🏁 Quick Start
+## Quick Start
 
 Three env vars are enough to launch:
 
 ```bash
-git clone git@github.com:evepupil/NextDevTpl.git
-cd NextDevTpl
+git clone git@github.com:evepupil/mAIrror.git
+cd mAIrror
 pnpm install
 cp .env.example .env.local
 ```
@@ -112,115 +120,95 @@ pnpm db:push    # push Drizzle schema to your DB
 pnpm dev        # http://localhost:3000
 ```
 
+### Required for Core Features
+
+| Service | Env Var | What You Get |
+|---------|---------|-------------|
+| OpenAI | `OPENAI_API_KEY` | AI visibility scanning, monitoring, audits |
+| Inngest | `INNGEST_EVENT_KEY` | Background monitoring, weekly reports, alerts |
+| Resend | `RESEND_API_KEY` | Email reports and alert notifications |
+| Creem | `CREEM_API_KEY` + webhook secret | Subscription payments |
+
 ### Optional Services
 
 | Service | Env Var | What You Get |
 |---------|---------|-------------|
-| Inngest | `INNGEST_EVENT_KEY` | Background queue (credits delivery, email batching) |
 | Upstash | `UPSTASH_REDIS_REST_URL` + `UPSTASH_REDIS_REST_TOKEN` | API rate limiting |
 | Axiom | `AXIOM_TOKEN` + `AXIOM_DATASET` | Structured cloud logging |
 | Sentry | `SENTRY_DSN` | Error monitoring |
-| OpenAI | `OPENAI_API_KEY` | AI chat |
-| Creem | `CREEM_API_KEY` + webhook secret | Subscription payments |
 
-Every service that isn't configured simply skips its logic — no crash, no error, no blocked startup.
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
 ├── app/                        # Next.js App Router
 │   └── [locale]/               # i18n routing (en / zh)
-│       ├── (marketing)/        # Public pages (landing, pricing, blog, docs)
-│       ├── (dashboard)/        # Authenticated user area
-│       └── (admin)/            # Admin-only area
+│       ├── (marketing)/        # Landing page, consulting
+│       ├── (dashboard)/        # Dashboard, monitoring, settings
+│       └── (admin)/            # Admin panel
 ├── components/ui/              # Shadcn/UI primitives
 ├── features/                   # Feature-based modules
-│   ├── marketing/              # header, footer, hero, pricing
-│   ├── dashboard/              # sidebar, topbar, stat cards
-│   ├── admin/                  # admin sidebar, user table
-│   ├── auth/                   # sign-in, sign-up, auth client
-│   ├── blog/                   # blog list, post detail
-│   ├── settings/               # profile, billing, account
-│   ├── support/                # ticket CRUD
-│   ├── analytics/              # admin dashboard charts
-│   ├── shared/                 # mode-toggle, language-switcher, icons
-│   └── pseo/                   # programmatic SEO demo
+│   ├── detection/              # Free domain visibility scan
+│   ├── monitoring/             # Keyword monitoring, reports, alerts, audits, competitors
+│   ├── marketing/              # Header, footer, hero, pricing, CTA
+│   ├── dashboard/              # Sidebar, stat cards
+│   ├── admin/                  # Admin sidebar, user management
+│   ├── auth/                   # Sign-in, sign-up, auth client
+│   ├── settings/               # Profile, billing, account management
+│   ├── support/                # Ticket system
+│   ├── subscription/           # Plan management, privilege checks
+│   ├── mail/                   # React Email templates, Resend sender
+│   ├── storage/                # S3 / R2 abstraction
+│   └── shared/                 # Theme toggle, language switcher, icons
 ├── db/                         # Drizzle schema definitions
-├── lib/                        # Shared utilities
-│   ├── auth/                   # Better Auth config + middleware
-│   ├── rate-limit/             # Upstash sliding window
-│   ├── logger/                 # Pino logger wrapper
-│   └── monitoring/             # Sentry instrumentation
-├── credits/                    # Double-entry FIFO credit engine
-├── mail/                       # React Email templates + Resend sender
-├── storage/                    # S3 / R2 abstraction
-├── config/                     # Site, nav, payment, subscription configs
+├── config/                     # Site, nav, payment, subscription plan configs
+├── inngest/                    # Inngest client + function registry
+├── lib/                        # Auth, rate-limit, logger, monitoring, safe-action
 └── test/                       # Integration tests
 ```
 
-## 🧩 Feature Modules
+## Database Schema
 
-### Auth
-Email/password + GitHub/Google OAuth. Session management, `user` / `admin` roles, middleware protection.
+Core monitoring tables:
 
-### Payments
-Creem subscription flow. Multi-tier pricing, webhook handling, subscription lifecycle, admin override.
+| Table | Purpose |
+|-------|---------|
+| `monitored_keyword` | User's brand keywords for monitoring |
+| `monitoring_result` | Append-only AI platform query results |
+| `competitor` | Competitor domains for comparison |
+| `competitor_result` | Competitor monitoring results |
+| `visibility_report` | Weekly/monthly report records |
+| `audit_result` | AI readiness audit results |
+| `alert_rule` | User-configured alert thresholds |
 
-### Credits
-FIFO batch expiry + double-entry ledger. Every credit transaction is a balanced debit/credit pair with audit trail.
+## Inngest Jobs
 
-### Email
-React Email templates with `<Html>`, `<Button>`, etc. Resend delivery. In dev mode, preview at `/api/emails/preview`.
+| Job | Schedule | Purpose |
+|-----|----------|---------|
+| `monitoring/keyword.check` | On-demand | Query AI platforms for a keyword |
+| `reports/weekly` | Monday 9AM UTC | Generate and email weekly reports |
+| `reports/competitor-monthly` | 1st of month | Generate monthly competitor reports |
+| `alerts/visibility-drop` | Every 6 hours | Check for visibility drops, send alerts |
 
-### Storage
-S3-compatible abstraction. Presigned upload URLs. Works with AWS S3, Cloudflare R2, MinIO, etc.
+## Routes
 
-### Support Tickets
-Threaded conversations, status workflow (open → in-progress → resolved), admin reply, email notifications.
+| Route | Description | Access |
+|-------|-------------|--------|
+| `/` | Landing page + free scan | Public |
+| `/#pricing` | Subscription plans | Public |
+| `/docs` | Documentation | Public |
+| `/consulting` | Consulting services | Public |
+| `/sign-in` | Sign in | Public |
+| `/sign-up` | Sign up | Public |
+| `/dashboard` | User dashboard | Auth required |
+| `/dashboard/monitoring` | Brand monitoring overview | Auth required |
+| `/dashboard/settings` | Account settings | Auth required |
+| `/dashboard/support` | Support tickets | Auth required |
+| `/admin` | Admin dashboard | Admin only |
+| `/admin/users` | User management | Admin only |
+| `/admin/tickets` | Ticket management | Admin only |
 
-### Admin Panel
-Overview dashboard, user management (search, role toggle, ban), credit top-ups, ticket queue.
-
-### i18n
-`next-intl`-based routing. Current locales: `en`, `zh`. Add a locale by dropping a JSON file.
-
-### Rate Limiting
-Globally applied middleware. Route-level rate windows. Zero-config — unset `UPSTASH_*` env vars and it becomes a pass-through.
-
-### Logging
-Pino structured logger wrapped in `@/lib/logger`. Ships to Axiom when configured, otherwise writes to console.
-
-### Error Monitoring
-Sentry auto-instruments Server Actions & route handlers. Attaches authenticated user context. Falls back to `console.error` without a DSN.
-
-## 🚢 Deployment
-
-### Self-hosted (recommended)
-
-The repo includes `deploy-build.bat` (Windows build machine) + `start-prod.sh` (Linux server). Edit the SSH host / key paths at the top of `deploy-build.bat`, then:
-
-```bat
-:: Windows local machine
-deploy-build.bat
-```
-
-The script: builds → tars `.next` + config → SCPs → remote server unpacks → PM2 restarts.
-
-### Vercel
-
-Zero-config — push to `master`, Vercel auto-detects Next.js.
-
-### Docker
-
-Write a `Dockerfile`:
-
-```dockerfile
-FROM node:20-alpine AS base
-# ... pnpm install, build, start
-```
-
-## 📋 Scripts
+## Scripts
 
 ```bash
 pnpm dev            # Next.js dev (Turbopack)
@@ -233,35 +221,34 @@ pnpm typecheck      # tsc --noEmit
 pnpm db:generate    # Drizzle kit generate
 pnpm db:push        # Drizzle kit push (dev)
 pnpm db:studio      # Drizzle Studio UI
-pnpm test           # Run integration tests
+pnpm test:run       # Run integration tests
 ```
 
-## 🗺️ Routes
+## Deployment
 
-| Route | Description | Access |
-|-------|-------------|--------|
-| `/` | Landing page | Public |
-| `/pricing` | Subscription plans | Public |
-| `/blog` | Blog index | Public |
-| `/blog/[slug]` | Blog post | Public |
-| `/docs` | Documentation | Public |
-| `/sign-in` | Sign in | Public |
-| `/sign-up` | Sign up | Public |
-| `/dashboard` | User dashboard | Auth required |
-| `/dashboard/support` | My tickets | Auth required |
-| `/settings` | Account settings | Auth required |
-| `/admin` | Admin dashboard | Admin only |
-| `/admin/users` | User management | Admin only |
-| `/admin/tickets` | Ticket queue | Admin only |
+### Vercel
 
-## 🤝 Contributing
+Zero-config — push to `master`, Vercel auto-detects Next.js.
+
+### Self-hosted
+
+The repo includes `deploy-build.bat` (Windows build machine) + `start-prod.sh` (Linux server). Edit SSH host and key paths, then:
+
+```bat
+:: Windows local machine
+deploy-build.bat
+```
+
+The script: builds → tars `.next` + config → SCPs → remote server unpacks → PM2 restarts.
+
+## Contributing
 
 - **Feature-based code**: place new modules under `src/features/<name>/`.
 - **Server Components first**: only add `'use client'` when you need interactivity.
-- **Server Actions**: all data mutations go through `next-safe-action`.
+- **Server Actions**: all data mutations go through `next-safe-action` (`actionClient`, `protectedAction`, `adminAction`).
 - **Type safety**: every prop, API response, and action schema must be typed.
 - **Tests**: add integration tests in `src/test/`.
 
-## 📄 License
+## License
 
 MIT

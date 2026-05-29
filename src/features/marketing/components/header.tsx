@@ -22,18 +22,14 @@ import { NavMenu } from "./nav-menu";
  * Products 下拉菜单翻译映射 key (移动端复用)
  */
 const productsTitleMap: Record<string, string> = {
-  Core: "productsMenu.core.title",
-  "DX Platform": "productsMenu.dx.title",
-  Infrastructure: "productsMenu.infra.title",
-  Authentication: "productsMenu.core.auth",
-  Payments: "productsMenu.core.payments",
-  Credits: "productsMenu.core.credits",
-  "Background Jobs": "productsMenu.dx.jobs",
-  Internationalization: "productsMenu.dx.i18n",
-  "AI Integration": "productsMenu.dx.ai",
-  "Admin Panel": "productsMenu.infra.admin",
-  "File Storage": "productsMenu.infra.storage",
-  Monitoring: "productsMenu.infra.monitoring",
+  Monitor: "productsMenu.monitor.title",
+  Improve: "productsMenu.improve.title",
+  "Brand Detection": "productsMenu.monitor.brandDetection",
+  "Competitive Analysis": "productsMenu.monitor.competitive",
+  "Weekly Reports": "productsMenu.monitor.reports",
+  "Readiness Audit": "productsMenu.improve.audit",
+  "Content Optimization": "productsMenu.improve.content",
+  Consulting: "productsMenu.improve.consulting",
 };
 
 /**
@@ -104,7 +100,7 @@ export function Header() {
               <rect x="13" y="13" width="9" height="9" rx="2" />
             </svg>
             <span className="text-xl font-bold tracking-tight">
-              NextDev<span className="text-primary">Tpl</span>
+              mAI<span className="text-primary">rror</span>
             </span>
           </Link>
 

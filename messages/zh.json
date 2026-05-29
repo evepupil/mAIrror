@@ -1,173 +1,173 @@
 {
   "HomePage": {
-    "title": "NextDevTpl",
-    "subtitle": "生产就绪的 Next.js SaaS 模板",
-    "description": "开箱即用的全栈 SaaS 模板，快速启动你的下一个项目。"
+    "title": "mairror",
+    "subtitle": "AI 品牌可见性监测",
+    "description": "看清 AI 眼中的品牌形象，追踪竞品可见度，获取可执行的优化方案。"
   },
   "Hero": {
-    "badge": "全新：支持 AI 模型集成",
-    "title1": "终极 Next.js 启动模板",
-    "titleHighlight": "助力您的下一个项目",
-    "subtitle": "使用生产就绪的基础设施更快地构建和发布。开箱即用的认证、支付和精美 UI 组件。",
-    "getStarted": "开始使用",
-    "seeDemo": "查看演示",
-    "trustLine": "深受全球开发者喜爱",
+    "badge": "免费即时扫描，无需注册",
+    "title1": "AI 如何看",
+    "titleHighlight": "你的品牌？",
+    "subtitle": "输入你的域名，获取实时 AI 可见性报告。了解 ChatGPT、Perplexity 等 AI 平台如何描述你的企业，以及与竞品的差距。",
+    "getStarted": "扫描我的品牌",
+    "seeDemo": "查看示例报告",
+    "trustLine": "为现代品牌提供 AI 可见性监测",
     "stats": {
-      "cards": "已创建项目",
-      "users": "开发者",
-      "rating": "满意度"
+      "cards": "已监测品牌",
+      "users": "覆盖 AI 平台",
+      "rating": "检测准确度"
     }
   },
   "Features": {
-    "label": "核心功能",
-    "title": "开箱即用的完整功能",
-    "subtitle": "从认证到支付，从国际化到管理后台，每个模块都经过精心打磨，让你专注于业务本身。",
+    "label": "监测能力",
+    "title": "全方位追踪 AI 可见性",
+    "subtitle": "从即时域名扫描到周度竞品报告，全面了解 AI 平台对你的品牌的认知。",
     "items": {
       "ai": {
-        "title": "认证与安全",
-        "description": "集成 Better Auth，支持邮箱密码、Google、GitHub OAuth 登录，开箱即用的会话管理与权限控制。"
+        "title": "即时品牌扫描",
+        "description": "输入任意域名，实时获取跨多个 AI 平台的可见性报告。10 秒内查看提及率、情感分析和关键话题。"
       },
       "multiSource": {
-        "title": "支付与订阅",
-        "description": "集成 Creem 支付，支持订阅和一次性购买，内置 Webhook 处理和订阅生命周期管理。"
+        "title": "多平台覆盖",
+        "description": "覆盖 ChatGPT、Perplexity、Claude、Bing Copilot 等主流 AI 平台，对比各平台对你品牌描述的不同侧重点。"
       },
       "outline": {
-        "title": "积分系统",
-        "description": "基于双重记账法的积分系统，支持 FIFO 批次过期、积分发放、消耗追踪和余额管理。"
+        "title": "竞品情报",
+        "description": "追踪竞品在你的目标关键词下的 AI 搜索出现频率，获取并排可见性得分和差距分析。"
       },
       "export": {
-        "title": "异步处理",
-        "description": "集成 Inngest 后台任务引擎，支持异步处理、任务队列和状态轮询，突破请求超时限制。"
+        "title": "周度变化追踪",
+        "description": "自动生成每周报告，展示可见性趋势、提及率变化、竞品排名变动和可执行的优化洞察。"
       },
       "batch": {
-        "title": "国际化",
-        "description": "集成 next-intl 多语言支持，内置中英双语翻译，轻松扩展更多语言。"
+        "title": "技术就绪度审计",
+        "description": "深度扫描网站对 AI 代理的友好程度：llms.txt、robots.txt、JSON-LD 结构化数据、Core Web Vitals 和内容可摘要性。"
       },
       "multilingual": {
-        "title": "管理后台",
-        "description": "完整的管理后台，支持用户管理、工单系统、数据统计，一键掌控全局。"
+        "title": "优化路线图",
+        "description": "获取按优先级排序、可执行的优化建议。从技术修复到内容策略，每项行动都附带预估影响评估。"
       }
     }
   },
   "HowItWorks": {
     "label": "使用流程",
-    "title": "三步启动你的 SaaS",
-    "subtitle": "从模板到上线，只需要几步简单操作。",
+    "title": "三步完成，一分钟出报告",
+    "subtitle": "首次 AI 可见性报告，不到一分钟即可获取。",
     "steps": {
       "upload": {
-        "title": "克隆 & 配置",
-        "description": "克隆模板仓库，配置环境变量（数据库、认证密钥等），运行 pnpm install 安装依赖。"
+        "title": "输入你的域名",
+        "description": "输入任意网址，无需注册即可获得首次扫描。即时查看跨多个 AI 平台的可见性结果。"
       },
       "generate": {
-        "title": "定制 & 开发",
-        "description": "根据你的业务需求定制功能模块，修改品牌信息、配色、定价方案，添加自定义业务逻辑。"
+        "title": "AI 分析引擎",
+        "description": "我们的引擎使用 20-30 个提示词变体查询 Perplexity、ChatGPT 和 Claude，测量 AI 平台对你的品牌的引用和描述方式。"
       },
       "export": {
-        "title": "部署 & 上线",
-        "description": "一键部署到 Vercel 或自有服务器，连接 Neon PostgreSQL 数据库，配置域名即可上线。"
+        "title": "获取可见性评分",
+        "description": "清晰的可见性评分、提及分解、竞品对比和优先级建议，一目了然的可读报告。"
       }
     },
     "completion": {
-      "title": "就是这么简单",
-      "description": "你的 SaaS 产品已准备就绪，随时可以上线运营。"
+      "title": "持续监测，持续优化",
+      "description": "订阅周度自动报告，不错过任何 AI 可见性变化。"
     }
   },
   "UseCases": {
-    "label": "适用场景",
-    "title": "适合各种 SaaS 产品",
-    "subtitle": "NextDevTpl 模板适用于多种类型的 SaaS 产品和业务场景。",
+    "label": "适用人群",
+    "title": "为现代营销团队打造",
+    "subtitle": "从创业公司到大型企业，了解你的 AI 足迹。",
     "items": {
       "students": {
-        "title": "AI 产品",
-        "subtitle": "快速构建 AI 应用",
-        "description": "利用内置的异步任务处理和积分系统，快速构建 AI 驱动的 SaaS 产品，支持长时间运行的 AI 任务。",
-        "examples": ["AI 内容生成", "AI 数据分析", "AI 辅助工具"]
+        "title": "市场总监",
+        "subtitle": "衡量真实的 AI 覆盖",
+        "description": "超越传统 SEO 指标。精准了解品牌在 AI 搜索结果中的出现位置和方式，追踪周度变化趋势。",
+        "examples": ["品牌可见性追踪", "AI 渠道 ROI", "高管汇报"]
       },
       "professionals": {
-        "title": "效率工具",
-        "subtitle": "打造专业工具",
-        "description": "完善的认证、订阅和积分系统，让你专注于核心工具逻辑的开发，快速推出你的效率工具产品。",
-        "examples": ["项目管理工具", "文档协作平台", "自动化工作流"]
+        "title": "SEO 与内容团队",
+        "subtitle": "为 AI 发现而优化",
+        "description": "识别被 AI 平台引用的内容，发现内容缺口，优化结构化数据、llms.txt 和页面结构以提高 AI 可读性。",
+        "examples": ["内容审计", "AI 引用追踪", "结构化数据验证"]
       },
       "language": {
-        "title": "创作者平台",
-        "subtitle": "支持内容创作",
-        "description": "内置文件上传、存储管理和用户系统，适合构建创作者经济平台，支持内容发布和变现。",
-        "examples": ["在线课程平台", "知识付费社区", "数字内容市场"]
+        "title": "竞品分析师",
+        "subtitle": "赢得 AI 可见性竞赛",
+        "description": "追踪竞品的 AI 可见性得分，发现他们的优势内容策略，识别市场中未被满足的可见性机会。",
+        "examples": ["竞品对标", "市场份额分析", "机会发现"]
       },
       "knowledge": {
-        "title": "内部工具",
-        "subtitle": "企业内部系统",
-        "description": "完整的管理后台、权限控制和工单系统，适合快速搭建企业内部管理工具和运营平台。",
-        "examples": ["CRM 客户管理", "运营数据看板", "内部审批系统"]
+        "title": "代理与咨询公司",
+        "subtitle": "为客户提供 AI 可见性服务",
+        "description": "将 AI 品牌监测作为服务交付。生成客户就绪的报告，在一个仪表盘中管理多个品牌，用趋势数据证明 ROI。",
+        "examples": ["客户报告", "多品牌仪表盘", "白标导出"]
       }
     }
   },
   "Testimonials": {
     "label": "用户评价",
-    "title": "听听开发者们怎么说",
-    "subtitle": "来自不同领域的开发者正在使用 NextDevTpl 模板快速构建产品。",
+    "title": "听听用户怎么说",
+    "subtitle": "营销团队和代理商使用 mairror 洞察 AI 可见性。",
     "items": [
       {
-        "content": "用这个模板两周就上线了一个 AI 写作工具，认证、支付、积分系统全都不用自己写，节省了至少一个月的开发时间。",
+        "content": "我以为我们的 AI 存在感还不错，直到 mairror 告诉我——我们在 Perplexity 的主关键词搜索中根本未被提及。两个月后，我们已被持续引用。",
         "author": "林小雨",
-        "role": "独立开发者"
+        "role": "市场副总裁 · SaaS 公司"
       },
       {
-        "content": "之前自己搭 SaaS 框架花了三个月，用了这个模板后发现认证、订阅、积分这些通用模块的完成度远超预期，代码质量也很高。",
+        "content": "每周报告正是我们的管理层需要的。清晰的可见性趋势，没有 SEO 术语。现在每次月度复盘都展示 mairror 的数据。",
         "author": "张明远",
-        "role": "全栈工程师"
+        "role": "数字营销总监"
       },
       {
-        "content": "国际化方案开箱即用，中英双语直接可用，扩展其他语言也很方便。对需要做多语言市场的 SaaS 产品来说非常省心。",
+        "content": "作为代理商，mairror 的竞品分析彻底改变了我们的交付方式。我们可以清晰地向客户展示他们在 AI 搜索中与前三竞争对手的差距。",
         "author": "陈思琪",
-        "role": "产品经理"
+        "role": "创始人 · 数字营销公司"
       },
       {
-        "content": "Inngest 异步任务的集成方案非常优雅，完美解决了 Vercel 60 秒超时的问题。我的 AI 产品不再需要担心长任务处理了。",
+        "content": "就绪度审计发现我们的 llms.txt 配置错误、JSON-LD 不完整。一天内修复两个问题后，AI 引用率下周就提升了 40%。",
         "author": "王浩然",
-        "role": "技术负责人"
+        "role": "SEO 负责人 · 电商平台"
       },
       {
-        "content": "积分系统的双重记账法实现得很专业，FIFO 批次过期逻辑也考虑到了。直接拿来用，不需要自己设计积分消费方案。",
+        "content": "我们从一次性审计服务切换到 mairror 的持续监测。趋势数据太有价值了——我们在可见性下降影响流量之前就发现了问题。",
         "author": "李雨桐",
-        "role": "后端开发者"
+        "role": "增长负责人 · 金融科技"
       },
       {
-        "content": "管理后台已经有了用户管理和工单系统，对小团队来说已经足够用了。部署到自有服务器也很简单，文档写得很清楚。",
+        "content": "说实话，光免费扫描就值得访问这个网站。10 秒内给了我 3 个可执行的洞察，而 99 欧的一次性审计却遗漏了这些问题。",
         "author": "赵一鸣",
-        "role": "创业者"
+        "role": "独立咨询顾问"
       }
     ]
   },
   "FAQ": {
     "label": "常见问题",
     "title": "你可能想了解的",
-    "subtitle": "关于 NextDevTpl 模板的常见问题与解答。",
+    "subtitle": "关于 AI 可见性监测和 mairror 的常见问题。",
     "items": [
       {
-        "question": "NextDevTpl 是什么？",
-        "answer": "NextDevTpl 是一个基于 Next.js 15、React 19、TypeScript 的生产就绪 SaaS 模板。内置认证（Better Auth）、支付（Creem）、积分系统、异步任务处理（Inngest）、国际化、管理后台等完整功能，帮助开发者快速启动 SaaS 项目。"
+        "question": "什么是 AI 品牌可见性？",
+        "answer": "AI 品牌可见性衡量你的品牌在 AI 搜索结果（ChatGPT、Perplexity、Claude、Bing Copilot）中出现的频率和好感度。与传统 SEO 排名不同，AI 可见性追踪的是跨提示词变体和平台的提及率。"
       },
       {
-        "question": "需要哪些技术基础？",
-        "answer": "你需要熟悉 React、TypeScript 和 Next.js 的基础知识。模板使用 Tailwind CSS 做样式，Drizzle ORM 做数据库操作，了解这些技术栈会帮助你更快上手。"
+        "question": "覆盖哪些 AI 平台？",
+        "answer": "目前覆盖 Perplexity、ChatGPT（OpenAI）、Claude（Anthropic）和 Bing Copilot。我们对每个关键词使用 20-30 个提示词变体进行查询，以生成具有统计意义的可见性得分。"
       },
       {
-        "question": "可以部署到哪些平台？",
-        "answer": "模板可以部署到 Vercel（推荐）、自有服务器或任何支持 Node.js 的平台。数据库推荐使用 Neon PostgreSQL（Serverless），文件存储使用 Cloudflare R2。"
+        "question": "你们追踪 AI 搜索排名吗？",
+        "answer": "不——原因是：AI 搜索结果是非确定性的。同样的查询可能返回不同的答案。我们不追踪排名，而是测量提及率（品牌在提示词变体中被引用的比例）和情感分析。"
       },
       {
-        "question": "积分系统是怎样的？",
-        "answer": "模板内置基于双重记账法的积分系统，支持积分发放、消耗、FIFO 批次过期、余额查询等完整功能。注册用户会获得免费积分，你可以根据业务需求自定义积分规则和定价方案。"
+        "question": "与传统 SEO 工具有何不同？",
+        "answer": "传统 SEO 工具（Ahrefs、Semrush）聚焦于 Google/Bing 搜索结果排名和关键词位置。mairror 专门测量 AI 聊天平台的可见性——这是一个完全不同的渠道，需要不同的优化策略。"
       },
       {
-        "question": "如何定制支付方案？",
-        "answer": "模板集成 Creem 支付，支持订阅和一次性购买。你可以在配置文件中自定义套餐名称、价格、积分额度和功能权限。Webhook 处理和订阅生命周期管理已经内置。"
+        "question": "技术就绪度审计检查什么？",
+        "answer": "审计覆盖五个维度：llms.txt 存在性和格式、robots.txt AI 指令、JSON-LD 结构化数据完整性、Core Web Vitals 性能和内容可摘要性。每个维度都有评分和具体修复建议。"
       },
       {
-        "question": "支持哪些认证方式？",
-        "answer": "模板集成 Better Auth，支持邮箱密码注册登录、Google OAuth 和 GitHub OAuth。你可以轻松扩展其他 OAuth 提供商。会话管理、密码重置、邮箱验证等功能开箱即用。"
+        "question": "能保证我们出现在 AI 搜索结果中吗？",
+        "answer": "没有任何工具能保证 AI 可见性——这些系统本质上是非确定性的。我们保证的是：精确展示 AI 平台目前对你的品牌的描述、与竞品的差距，以及提升可见性最有效的步骤。"
       }
     ]
   },
@@ -240,11 +240,11 @@
     }
   },
   "CTA": {
-    "badge": "免费开始，无需信用卡",
-    "title": "准备好启动你的 SaaS 了吗？",
-    "subtitle": "注册即可获得免费积分，立即体验完整功能。用生产就绪的模板快速构建你的下一个产品。",
-    "getStarted": "免费注册",
-    "seeDemo": "查看演示"
+    "badge": "免费扫描，无需信用卡",
+    "title": "准备好了解你的 AI 可见性了吗？",
+    "subtitle": "输入域名，10 秒内获取实时 AI 品牌报告。无需注册。",
+    "getStarted": "免费扫描我的品牌",
+    "seeDemo": "查看示例报告"
   },
   "DashboardPages": {
     "dashboard": {
@@ -270,6 +270,34 @@
   "CreditTransactions": {
     "anonymous_migration": "迁移 {cardCount} 条匿名生成的数据",
     "anonymous_migration_bonus": "新用户福利：免费保存 {cardCount} 条数据"
+  },
+  "Header": {
+    "dashboard": "控制台",
+    "login": "登录",
+    "getStarted": "免费开始",
+    "docs": "文档"
+  },
+  "Navigation": {
+    "products": "产品",
+    "docs": "文档",
+    "pseo": "PSEO",
+    "pricing": "定价",
+    "blog": "博客",
+    "about": "关于",
+    "productsMenu": {
+      "monitor": {
+        "title": "监测",
+        "brandDetection": "品牌检测",
+        "competitive": "竞品分析",
+        "reports": "周度报告"
+      },
+      "improve": {
+        "title": "优化",
+        "audit": "就绪度审计",
+        "content": "内容优化",
+        "consulting": "咨询服务"
+      }
+    }
   },
   "Common": {
     "getStarted": "开始使用",
@@ -302,7 +330,7 @@
     "dialog": {
       "title": "管理 Cookie 偏好",
       "heading": "您的隐私选择",
-      "description": "您可以在此面板中随时查看并修改 Cookie 偏好。若不希望我们使用可选类别，请关闭对应开关；若只接受必要 Cookie，也可以直接选择“仅必要”。",
+      "description": "您可以在此面板中随时查看并修改 Cookie 偏好。若不希望我们使用可选类别，请关闭对应开关；若只接受必要 Cookie，也可以直接选择仅必要。",
       "acceptCurrentSelection": "接受当前选择"
     },
     "card": {
@@ -335,9 +363,9 @@
   },
   "Pricing": {
     "title": "简单透明的定价",
-    "subtitle": "按积分付费，<strong>永久有效</strong>，没用完也不浪费。年付立省 40%。",
-    "creditsUpfront": "一次性到账",
-    "creditsPerYear": "积分 / 年",
+    "subtitle": "从免费扫描开始。订阅获取持续监测<strong>和竞品分析</strong>。所有套餐包含周度报告和告警通知。",
+    "creditsUpfront": "一次性",
+    "creditsPerYear": "/ 年",
     "monthly": "月付",
     "yearly": "年付",
     "save": "省",
@@ -345,136 +373,91 @@
     "currentPlan": "当前套餐",
     "alreadySubscribed": "已订阅",
     "manageSubscription": "管理订阅",
-    "booksNote": "≈ {count} 万次 API 调用",
-    "cardsNote": "≈ {count} 积分",
+    "booksNote": "≈ {count} 次扫描",
+    "cardsNote": "≈ {count} 个关键词",
     "plans": {
       "free": {
         "name": "免费版",
-        "description": "无负担体验基础功能",
-        "cta": "免费开始",
-        "creditsAmount": "200",
-        "creditsLabel": "积分",
+        "description": "无负担体验品牌扫描",
+        "cta": "免费扫描",
+        "creditsAmount": "1",
+        "creditsLabel": "次免费扫描",
         "creditsNote": "一次性",
         "features": {
-          "creditsNeverExpire": "积分永久有效，不清零",
-          "credits": "200 积分（一次性）",
-          "input": "基础功能访问",
-          "characters": "标准处理额度",
-          "fileSize": "最大 5MB 文件",
-          "export": "数据导出",
-          "history": "历史数据永久保存"
+          "creditsNeverExpire": "即时品牌可见性扫描",
+          "credits": "5-8 项关键指标",
+          "input": "Perplexity + ChatGPT 覆盖",
+          "characters": "无需注册",
+          "fileSize": "无历史数据",
+          "export": "可分享的报告链接",
+          "history": "24 小时报告访问"
         }
       },
       "starter": {
-        "name": "入门版",
-        "description": "适合个人开发者和小项目",
+        "name": "基础版",
+        "description": "适合刚开始 AI 监测的品牌",
         "cta": "订阅",
-        "creditsAmount": "3,000",
-        "creditsLabel": "积分 / 月",
-        "booksCount": "8",
+        "creditsAmount": "¥199",
+        "creditsLabel": "/ 月",
+        "booksCount": "3",
         "features": {
-          "creditsNeverExpire": "积分永久有效，不清零",
-          "credits": "每月 3,000 积分",
-          "input": "全部基础功能",
-          "characters": "标准处理额度",
-          "fileSize": "最大 20MB 文件",
-          "export": "数据导出",
-          "history": "历史数据永久保存",
-          "support": "邮件支持"
+          "creditsNeverExpire": "3 个关键词监测",
+          "credits": "周度自动报告",
+          "input": "Perplexity + ChatGPT 覆盖",
+          "characters": "90 天趋势历史",
+          "fileSize": "邮件报告推送",
+          "export": "告警通知",
+          "history": "基础支持"
         }
       },
       "pro": {
         "name": "专业版",
-        "description": "性价比最高，适合成长中的产品",
+        "description": "性价比最高，适合成长中的品牌",
         "cta": "订阅",
-        "creditsAmount": "8,000",
-        "creditsLabel": "积分 / 月",
-        "booksCount": "23",
+        "creditsAmount": "¥499",
+        "creditsLabel": "/ 月",
+        "booksCount": "10",
         "features": {
-          "creditsNeverExpire": "积分永久有效，不清零",
-          "credits": "每月 8,000 积分",
-          "input": "全部高级功能",
-          "characters": "更大处理额度",
-          "fileSize": "最大 50MB 文件",
-          "queue": "优先处理队列",
-          "export": "数据导出",
-          "history": "历史数据永久保存",
-          "customCards": "自定义功能扩展",
-          "support": "优先支持"
+          "creditsNeverExpire": "10 个关键词监测",
+          "credits": "周度 + 月度报告",
+          "input": "全 AI 平台覆盖",
+          "characters": "12 个月趋势历史",
+          "fileSize": "竞品分析（3 个品牌）",
+          "queue": "技术就绪度审计",
+          "export": "优先邮件 + 站内告警",
+          "history": "优先支持",
+          "customCards": "自定义报告品牌"
         }
       },
       "ultra": {
-        "name": "旗舰版",
-        "description": "适合高频使用和企业团队",
+        "name": "企业版",
+        "description": "适合代理商和大型品牌",
         "cta": "订阅",
-        "creditsAmount": "16,000",
-        "creditsLabel": "积分 / 月",
-        "booksCount": "46",
+        "creditsAmount": "¥1,299",
+        "creditsLabel": "/ 月",
+        "booksCount": "30",
         "features": {
-          "creditsNeverExpire": "积分永久有效，不清零",
-          "credits": "每月 16,000 积分",
-          "input": "全部高级功能",
-          "characters": "最大处理额度",
-          "fileSize": "最大 100MB 文件",
-          "queue": "最高优先队列",
-          "export": "数据导出",
-          "history": "历史数据永久保存",
-          "customCards": "自定义功能扩展",
-          "aiAssist": "高级 AI 功能",
-          "support": "专属支持"
+          "creditsNeverExpire": "30 个关键词监测",
+          "credits": "日报 + 周报 + 月报",
+          "input": "全 AI 平台 + 自定义",
+          "characters": "无限趋势历史",
+          "fileSize": "无限竞品分析",
+          "queue": "完整就绪度审计套件",
+          "export": "API 接入",
+          "history": "专属客户经理",
+          "customCards": "白标报告",
+          "aiAssist": "咨询积分",
+          "support": "SLA 支持"
         }
-      }
-    }
-  },
-  "Header": {
-    "dashboard": "控制台",
-    "login": "登录",
-    "getStarted": "免费开始",
-    "docs": "文档"
-  },
-  "Navigation": {
-    "products": "产品",
-    "docs": "文档",
-    "pseo": "PSEO",
-    "pricing": "定价",
-    "blog": "博客",
-    "about": "关于",
-    "productsMenu": {
-      "core": {
-        "title": "核心功能",
-        "auth": "认证系统",
-        "authDesc": "多方式登录与会话管理",
-        "payments": "支付集成",
-        "paymentsDesc": "订阅和一次性支付",
-        "credits": "积分系统",
-        "creditsDesc": "双重记账法与 FIFO 批次过期"
-      },
-      "dx": {
-        "title": "开发体验",
-        "jobs": "异步处理",
-        "jobsDesc": "Inngest 后台任务引擎",
-        "i18n": "国际化",
-        "i18nDesc": "next-intl 多语言支持",
-        "ai": "AI 集成",
-        "aiDesc": "多模型 LLM 抽象层"
-      },
-      "infra": {
-        "title": "基础设施",
-        "admin": "管理后台",
-        "adminDesc": "用户与工单管理",
-        "storage": "文件存储",
-        "storageDesc": "S3/R2 云存储",
-        "monitoring": "监控日志",
-        "monitoringDesc": "日志与错误追踪"
       }
     }
   },
   "Subscription": {
     "plans": {
       "free": "免费版",
-      "starter": "入门版",
+      "starter": "基础版",
       "pro": "专业版",
-      "ultra": "旗舰版"
+      "ultra": "企业版"
     }
   },
   "Dashboard": {
@@ -577,11 +560,11 @@
         "description": "管理您的订阅和账单周期。",
         "freePlan": "免费版",
         "current": "当前",
-        "basicFeatures": "基础功能，积分有限",
-        "premiumFeatures": "完整访问所有高级功能",
+        "basicFeatures": "基础功能，关键词数量有限",
+        "premiumFeatures": "完整访问所有监测功能",
         "upgradePlan": "升级套餐",
         "managePlan": "管理套餐",
-        "monthlyCredits": "每月积分",
+        "monthlyCredits": "每月关键词",
         "renewalDate": "续费日期",
         "notApplicable": "无",
         "price": "价格",
@@ -602,7 +585,7 @@
         "description": "添加或管理您的支付方式，用于订阅和购买。",
         "addMethod": "添加支付方式",
         "noMethods": "暂无支付方式",
-        "noMethodsHint": "添加支付方式以升级套餐或购买积分"
+        "noMethodsHint": "添加支付方式以升级套餐"
       },
       "history": {
         "title": "账单历史",
@@ -617,30 +600,30 @@
       }
     },
     "usage": {
-      "title": "积分使用情况",
-      "description": "用于各项服务的积分消耗概览。",
-      "availableCredits": "可用积分",
-      "creditsAvailable": "积分可用",
+      "title": "监测使用情况",
+      "description": "本月监测的关键词和扫描次数。",
+      "availableCredits": "可用扫描次数",
+      "creditsAvailable": "次扫描可用",
       "getMoreCredits": {
-        "title": "获取更多积分",
-        "description": "订阅套餐以获取每月积分并解锁高级功能",
+        "title": "获取更多关键词",
+        "description": "订阅套餐以监测更多关键词并解锁竞品分析功能",
         "viewPlans": "查看订阅套餐"
       },
       "expiringSoon": {
-        "title": "积分即将过期",
-        "message": "{count} 积分将于 {date} 过期"
+        "title": "扫描次数即将过期",
+        "message": "{count} 次扫描将于 {date} 过期"
       },
       "transactions": {
-        "title": "交易记录",
-        "description": "查看所有积分交易，包括发放和消耗",
+        "title": "活动记录",
+        "description": "查看所有监测活动和扫描历史",
         "date": "日期",
         "type": "类型",
         "transactionDescription": "描述",
         "transactionAmount": "数量",
-        "noTransactions": "暂无交易记录",
-        "noTransactionsHint": "您的积分交易将显示在此处",
+        "noTransactions": "暂无活动记录",
+        "noTransactionsHint": "您的监测活动将显示在此处",
         "loading": "加载中...",
-        "showing": "显示第 {from} 至 {to} 条，共 {total} 条交易",
+        "showing": "显示第 {from} 至 {to} 条，共 {total} 条活动",
         "rowsPerPage": "每页显示",
         "pageOf": "第 {page} 页，共 {total} 页",
         "types": {
@@ -648,18 +631,18 @@
           "admin_grant": "管理员发放",
           "monthly_grant": "每月发放",
           "purchase": "购买",
-          "consumption": "消耗",
+          "consumption": "扫描",
           "expiration": "已过期",
           "refund": "退款"
         },
         "descriptions": {
           "registration_bonus": "新用户注册奖励",
-          "monthly_grant": "{plan} 月度订阅积分",
-          "yearly_grant": "{plan} 年度订阅积分 ({monthly} x 12)",
-          "consumption": "服务消耗",
-          "expiration": "积分已过期",
-          "admin_grant": "管理员发放积分",
-          "refund": "积分退款"
+          "monthly_grant": "{plan} 月度订阅扫描次数",
+          "yearly_grant": "{plan} 年度订阅扫描次数 ({monthly} x 12)",
+          "consumption": "品牌扫描消耗",
+          "expiration": "扫描次数已过期",
+          "admin_grant": "管理员发放扫描次数",
+          "refund": "扫描次数退款"
         }
       }
     }

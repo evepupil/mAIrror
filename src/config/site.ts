@@ -5,41 +5,42 @@
  */
 export const siteConfig = {
   /** 站点名称 */
-  name: "NextDevTpl",
+  name: "mairror",
 
   /** 站点描述 */
   description:
-    "Production-ready Next.js SaaS template with auth, payments, credits, i18n, and more.",
+    "AI Brand Visibility Monitoring — see how AI search engines describe your brand, compare with competitors, and get actionable improvement plans.",
 
   /** 站点 URL (生产环境) */
-  url: process.env.NEXT_PUBLIC_APP_URL || "https://example.com",
+  url: process.env.NEXT_PUBLIC_APP_URL || "https://mairror.com",
 
   /** OG 图片 URL */
   ogImage: "/og-image.png",
 
   /** 作者信息 */
   author: {
-    name: "NextDevTpl Team",
-    url: "https://example.com",
-    email: "hello@example.com",
+    name: "mairror Team",
+    url: "https://mairror.com",
+    email: "hello@mairror.com",
   },
 
   /** 社交链接 */
   links: {
-    twitter: "https://twitter.com/example",
-    github: "https://github.com/example/nextdevtpl",
-    discord: "https://discord.gg/example",
+    twitter: "https://twitter.com/mairrorhq",
+    github: "https://github.com/mairrorhq/mairror",
+    discord: "https://discord.gg/mairror",
   },
 
   /** 关键词 (SEO) */
   keywords: [
-    "SaaS",
-    "Next.js",
-    "Template",
-    "Boilerplate",
-    "Starter Kit",
-    "Auth",
-    "Payments",
+    "AI visibility",
+    "AI search",
+    "brand monitoring",
+    "AI brand audit",
+    "AI SEO",
+    "Perplexity optimization",
+    "competitor analysis",
+    "LLM optimization",
   ],
 } as const;
 

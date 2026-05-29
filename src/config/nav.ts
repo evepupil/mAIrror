@@ -1,17 +1,14 @@
 import {
-  Activity,
   Bot,
   Coins,
   CreditCard,
   Globe,
-  HardDrive,
   Headset,
   LayoutDashboard,
   type LucideIcon,
   Settings,
   Shield,
   Ticket,
-  UserCog,
   Users,
   Zap,
 } from "lucide-react";
@@ -63,71 +60,48 @@ export interface ProductNavGroup {
  */
 export const productsNav: ProductNavGroup[] = [
   {
-    title: "Core",
+    title: "Monitor",
     items: [
       {
-        title: "Authentication",
+        title: "Brand Detection",
         href: "/#features",
-        description: "Multi-provider auth with session management",
+        description: "Real-time AI search visibility scan",
         icon: Shield,
       },
       {
-        title: "Payments",
+        title: "Competitive Analysis",
         href: "/#features",
-        description: "Subscriptions and one-time purchases",
+        description: "Compare with competitors side by side",
         icon: CreditCard,
       },
       {
-        title: "Credits",
+        title: "Weekly Reports",
         href: "/#features",
-        description: "Double-entry bookkeeping with FIFO expiration",
+        description: "Automated monitoring & trend tracking",
         icon: Coins,
       },
     ],
   },
   {
-    title: "DX Platform",
+    title: "Improve",
     items: [
       {
-        title: "Background Jobs",
+        title: "Readiness Audit",
         href: "/#features",
-        description: "Async processing with Inngest",
+        description: "Technical audit for AI agent friendliness",
         icon: Zap,
       },
       {
-        title: "Internationalization",
+        title: "Content Optimization",
         href: "/#features",
-        description: "Multi-language with next-intl",
+        description: "Structured data & AI content strategy",
         icon: Globe,
       },
       {
-        title: "AI Integration",
+        title: "Consulting",
         href: "/#features",
-        description: "Multi-model LLM abstraction",
+        description: "Expert improvement plans & execution",
         icon: Bot,
-      },
-    ],
-  },
-  {
-    title: "Infrastructure",
-    items: [
-      {
-        title: "Admin Panel",
-        href: "/#features",
-        description: "User and ticket management",
-        icon: UserCog,
-      },
-      {
-        title: "File Storage",
-        href: "/#features",
-        description: "S3/R2 cloud storage",
-        icon: HardDrive,
-      },
-      {
-        title: "Monitoring",
-        href: "/#features",
-        description: "Logging and error tracking",
-        icon: Activity,
       },
     ],
   },
@@ -138,7 +112,6 @@ export const productsNav: ProductNavGroup[] = [
  */
 export const mainNav: NavItem[] = [
   { title: "Docs", href: "/docs" },
-  { title: "PSEO", href: "/pseo" },
   { title: "Pricing", href: "/#pricing" },
   { title: "Blog", href: "/blog" },
 ];

@@ -20,7 +20,7 @@ export function AuthLogo() {
         <rect x="13" y="13" width="9" height="9" rx="2" />
       </svg>
       <span className="text-xl font-bold tracking-tight">
-        NextDev<span className="text-primary">Tpl</span>
+        mAI<span className="text-primary">rror</span>
       </span>
     </div>
   );

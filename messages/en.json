@@ -1,173 +1,173 @@
 {
   "HomePage": {
-    "title": "NextDevTpl",
-    "subtitle": "Production-Ready Next.js SaaS Template",
-    "description": "Ship your SaaS product faster with a production-ready full-stack template."
+    "title": "mairror",
+    "subtitle": "AI Brand Visibility Monitoring",
+    "description": "See how AI search engines describe your brand, track competitor visibility, and get actionable improvement plans."
   },
   "Hero": {
-    "badge": "New: AI Model Integration",
-    "title1": "The Ultimate Next.js",
-    "titleHighlight": "Starter Template",
-    "subtitle": "Build and ship faster with production-ready infrastructure. Authentication, payments, and beautiful UI components out of the box.",
-    "getStarted": "Get Started",
-    "seeDemo": "View Demo",
-    "trustLine": "Trusted by developers worldwide",
+    "badge": "Free instant scan — no signup required",
+    "title1": "How Does AI See",
+    "titleHighlight": "Your Brand?",
+    "subtitle": "Enter your domain and get a real-time AI visibility report. See how ChatGPT, Perplexity, and other AI platforms describe your business — and how you compare to competitors.",
+    "getStarted": "Scan My Brand Now",
+    "seeDemo": "See Example Report",
+    "trustLine": "AI visibility monitoring for modern brands",
     "stats": {
-      "cards": "Projects Built",
-      "users": "Developers",
-      "rating": "Satisfaction"
+      "cards": "Brands Monitored",
+      "users": "AI Platforms Covered",
+      "rating": "Detection Accuracy"
     }
   },
   "Features": {
-    "label": "Core Features",
-    "title": "Everything You Need to Launch",
-    "subtitle": "Every essential SaaS feature, pre-built and production-ready, so you can focus on what makes your product unique.",
+    "label": "What We Monitor",
+    "title": "Everything You Need to Track AI Visibility",
+    "subtitle": "From instant domain scans to weekly competitive reports, understand exactly how AI platforms perceive your brand.",
     "items": {
       "ai": {
-        "title": "Auth & Security",
-        "description": "Better Auth with email/password, Google and GitHub OAuth, email verification, and role-based access control out of the box."
+        "title": "Instant Brand Scan",
+        "description": "Enter any domain and get a real-time visibility report across multiple AI platforms. See mention rates, sentiment, and key topics in under 10 seconds."
       },
       "multiSource": {
-        "title": "Payment & Subscription",
-        "description": "Creem integration for subscriptions and one-time purchases. Four plan tiers with automatic billing cycle management."
+        "title": "Multi-Platform Coverage",
+        "description": "Monitor your brand across ChatGPT, Perplexity, Claude, and Bing Copilot. Compare how each AI platform describes your business differently."
       },
       "outline": {
-        "title": "Credits System",
-        "description": "Double-entry bookkeeping with FIFO batch expiration. Grant, consume, and track credits with full transaction history."
+        "title": "Competitive Intelligence",
+        "description": "Track how often competitors appear in AI searches for your target keywords. Get side-by-side visibility scores and gap analysis."
       },
       "export": {
-        "title": "Async Processing",
-        "description": "Inngest-powered background jobs that bypass serverless timeouts. Built-in task queue with status polling and progress tracking."
+        "title": "Weekly Change Tracking",
+        "description": "Automated weekly reports showing your visibility trends, mention rate changes, competitive position shifts, and actionable insights."
       },
       "batch": {
-        "title": "Internationalization",
-        "description": "Full i18n support via next-intl with locale-prefixed routes. Ship in multiple languages from day one."
+        "title": "Technical Readiness Audit",
+        "description": "Deep scan of your website's AI-friendliness: llms.txt, robots.txt, JSON-LD structured data, Core Web Vitals, and content summarizability."
       },
       "multilingual": {
-        "title": "Admin Dashboard",
-        "description": "Built-in admin panel for user management, support tickets, and platform statistics. Role-based access with admin-only routes."
+        "title": "Improvement Roadmap",
+        "description": "Get prioritized, actionable steps to improve your AI visibility. From technical fixes to content strategy — with estimated impact for each action."
       }
     }
   },
   "HowItWorks": {
     "label": "How It Works",
-    "title": "From Zero to Production in Three Steps",
-    "subtitle": "Get your SaaS up and running in minutes, not months.",
+    "title": "From Domain to Insights in Three Steps",
+    "subtitle": "Get your first AI visibility report in less than a minute.",
     "steps": {
       "upload": {
-        "title": "Clone & Configure",
-        "description": "Clone the repository, install dependencies with pnpm, and set your environment variables. Database, auth, and payments are ready to connect."
+        "title": "Enter Your Domain",
+        "description": "Type in any website URL. No signup required for your first scan. See instant results across multiple AI platforms."
       },
       "generate": {
-        "title": "Customize & Build",
-        "description": "Replace the example features with your own business logic. The modular architecture keeps everything organized by feature domain."
+        "title": "AI Analysis Engine",
+        "description": "Our engine queries Perplexity, ChatGPT, and Claude with 20-30 prompt variants to measure how AI platforms reference and describe your brand."
       },
       "export": {
-        "title": "Deploy & Launch",
-        "description": "Deploy to Vercel, your own server, or any Node.js host. Push your Drizzle schema, configure webhooks, and go live."
+        "title": "Get Your Visibility Score",
+        "description": "Receive a clear visibility score, mention breakdown, competitive comparison, and prioritized recommendations in an easy-to-read report."
       }
     },
     "completion": {
-      "title": "That's it!",
-      "description": "Your SaaS is live. Focus on growing your product and acquiring customers."
+      "title": "Keep monitoring, keep improving",
+      "description": "Subscribe to weekly automated reports and never miss a change in your AI visibility."
     }
   },
   "UseCases": {
-    "label": "Use Cases",
-    "title": "Build Any SaaS Product",
-    "subtitle": "NextDevTpl provides the foundation for a wide range of SaaS applications.",
+    "label": "Who Uses mairror",
+    "title": "Built for Modern Marketing Teams",
+    "subtitle": "From startups to enterprises, understand your AI footprint.",
     "items": {
       "students": {
-        "title": "AI Products",
-        "subtitle": "AI-Powered Applications",
-        "description": "Build AI wrappers, content generators, or intelligent assistants. The credits system and async processing handle LLM calls and usage metering out of the box.",
-        "examples": ["AI content tools", "Chatbot platforms", "Image generators"]
+        "title": "Marketing Directors",
+        "subtitle": "Measure Real AI Reach",
+        "description": "Go beyond traditional SEO metrics. See exactly how and where your brand appears in AI-powered search results, and track changes week over week.",
+        "examples": ["Brand visibility tracking", "AI channel ROI", "Executive reporting"]
       },
       "professionals": {
-        "title": "Productivity Tools",
-        "subtitle": "Workflow & Collaboration",
-        "description": "Create project management, note-taking, or team collaboration tools. Auth, roles, and subscription tiers are already wired up.",
-        "examples": ["Task managers", "Document editors", "Scheduling apps"]
+        "title": "SEO & Content Teams",
+        "subtitle": "Optimize for AI Discovery",
+        "description": "Identify which content gets cited by AI platforms, discover content gaps, and optimize structured data, llms.txt, and page structure for AI readability.",
+        "examples": ["Content audit", "AI citation tracking", "Structured data validation"]
       },
       "language": {
-        "title": "Creator Platforms",
-        "subtitle": "Content & Community",
-        "description": "Launch platforms for creators, educators, or communities. Payment processing, user dashboards, and file storage are ready to use.",
-        "examples": ["Course platforms", "Newsletter tools", "Membership sites"]
+        "title": "Competitive Analysts",
+        "subtitle": "Win the AI Visibility Race",
+        "description": "Track competitors' AI visibility scores, discover their winning content strategies, and identify unmet visibility opportunities in your market.",
+        "examples": ["Competitor benchmarking", "Market share analysis", "Opportunity discovery"]
       },
       "knowledge": {
-        "title": "Internal Tools",
-        "subtitle": "Business Operations",
-        "description": "Build internal dashboards, admin panels, or data management tools. The admin module and role-based access provide a solid starting point.",
-        "examples": ["Admin dashboards", "CRM systems", "Reporting tools"]
+        "title": "Agencies & Consultants",
+        "subtitle": "Deliver AI Visibility to Clients",
+        "description": "Offer AI brand monitoring as a service. Generate client-ready reports, track multiple brands from one dashboard, and prove ROI with trend data.",
+        "examples": ["Client reporting", "Multi-brand dashboard", "White-label exports"]
       }
     }
   },
   "Testimonials": {
     "label": "Testimonials",
-    "title": "What Developers Say",
-    "subtitle": "Developers around the world are using NextDevTpl to ship their SaaS products faster.",
+    "title": "What Our Users Say",
+    "subtitle": "Marketing teams and agencies use mairror to understand their AI visibility.",
     "items": [
       {
-        "content": "I went from idea to paying customers in under a week. The auth, payments, and credits system saved me at least a month of development time.",
+        "content": "I thought our AI presence was fine until mairror showed me we weren't even mentioned in Perplexity for our main keywords. Two months later, we're consistently cited.",
         "author": "Sarah Lin",
-        "role": "Indie Hacker · AI Tools"
+        "role": "VP Marketing · SaaS Company"
       },
       {
-        "content": "The Inngest integration for background jobs is a game-changer. I no longer worry about serverless timeouts when processing large tasks for my users.",
+        "content": "The weekly reports are exactly what our C-suite needs. Clear visibility trends without SEO jargon. We present mairror data at every monthly review now.",
         "author": "Michael Zhang",
-        "role": "Full-Stack Developer"
+        "role": "Digital Marketing Director"
       },
       {
-        "content": "Having i18n baked in from the start made expanding to international markets seamless. We launched in English and Chinese simultaneously.",
+        "content": "As an agency, mairror's competitive analysis is a game-changer. We can show clients exactly where they stand in AI search versus their top 3 competitors.",
         "author": "Emily Chen",
-        "role": "Startup Founder"
+        "role": "Founder · Digital Agency"
       },
       {
-        "content": "The credits system with double-entry bookkeeping is incredibly well-designed. It took me five minutes to wire up usage metering for my API product.",
+        "content": "The readiness audit found our llms.txt was misconfigured and our JSON-LD was incomplete. Fixed both in a day and saw our AI citation rate jump 40% next week.",
         "author": "David Wang",
-        "role": "Senior Engineer · API Platform"
+        "role": "SEO Lead · E-commerce"
       },
       {
-        "content": "The modular feature architecture is exactly what I needed. Each domain is self-contained, so onboarding new developers to the codebase is effortless.",
+        "content": "We switched from a one-time audit service to mairror's continuous monitoring. The trend data is invaluable — we catch visibility drops before they hurt traffic.",
         "author": "Lisa Li",
-        "role": "Tech Lead · SaaS Startup"
+        "role": "Head of Growth · Fintech"
       },
       {
-        "content": "I've tried dozens of SaaS boilerplates. This one stands out because it doesn't cut corners — the admin panel, support tickets, and subscription management all work end-to-end.",
+        "content": "Honestly, the free scan alone is worth visiting the site. It gave me three actionable insights in under 10 seconds that a $99 audit missed.",
         "author": "Kevin Zhao",
-        "role": "Solo Developer · Productivity Tools"
+        "role": "Independent Consultant"
       }
     ]
   },
   "FAQ": {
     "label": "FAQ",
     "title": "Questions You Might Have",
-    "subtitle": "Common questions and answers about NextDevTpl.",
+    "subtitle": "Common questions about AI visibility monitoring and mairror.",
     "items": [
       {
-        "question": "What is NextDevTpl?",
-        "answer": "NextDevTpl is a production-ready Next.js SaaS starter template. It includes authentication, payment processing, a credits system, background job processing, internationalization, an admin dashboard, and more — everything you need to launch a SaaS product quickly."
+        "question": "What is AI brand visibility?",
+        "answer": "AI brand visibility measures how often and how favorably your brand appears in AI-powered search results (ChatGPT, Perplexity, Claude, Bing Copilot). Unlike traditional SEO rankings, AI visibility tracks mention rates across prompt variants and platforms."
       },
       {
-        "question": "What tech stack does it use?",
-        "answer": "Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS 4, Shadcn/UI, Drizzle ORM with PostgreSQL, Better Auth for authentication, Creem for payments, Inngest for async processing, next-intl for i18n, and Biome for linting and formatting."
+        "question": "Which AI platforms do you monitor?",
+        "answer": "We currently monitor Perplexity, ChatGPT (OpenAI), Claude (Anthropic), and Bing Copilot. We query each platform with 20-30 prompt variants per keyword to produce statistically meaningful visibility scores."
       },
       {
-        "question": "How is the credits system designed?",
-        "answer": "The credits system uses double-entry bookkeeping with FIFO batch expiration. Every credit movement creates a transaction with debit and credit accounts. Credits can be granted via subscriptions, purchases, or admin actions, and consumed by any feature you build."
+        "question": "Do you track AI search rankings?",
+        "answer": "No — and here's why: AI search results are non-deterministic. The same query can return different answers. Instead of 'rankings', we measure mention rate (how often your brand appears across prompt variants) and sentiment analysis."
       },
       {
-        "question": "Can I customize the subscription plans?",
-        "answer": "Absolutely. The subscription plan configuration is centralized in a single config file. You can adjust plan names, pricing, credit allocations, feature limits, and billing cycles to match your product's needs."
+        "question": "How is this different from traditional SEO tools?",
+        "answer": "Traditional SEO tools (Ahrefs, Semrush) focus on Google/Bing SERP positions and keyword rankings. mairror specifically measures visibility in AI chat platforms — which is an entirely different channel with different optimization requirements."
       },
       {
-        "question": "Does it support background processing?",
-        "answer": "Yes. Inngest handles all background jobs, solving the serverless timeout problem. Tasks run asynchronously with status polling and progress tracking built in. You can easily add your own Inngest functions for any long-running work."
+        "question": "What does the technical readiness audit check?",
+        "answer": "Our audit checks five dimensions: llms.txt presence and format, robots.txt AI directives, JSON-LD structured data completeness, Core Web Vitals performance, and content summarizability. Each dimension gets a score and specific fix recommendations."
       },
       {
-        "question": "Is it ready for production?",
-        "answer": "Yes. The template includes rate limiting, error monitoring (Sentry), structured logging (Pino + Axiom), secure file storage (Cloudflare R2), and graceful degradation for optional services. It's designed to run on a VPS or any Node.js hosting platform."
+        "question": "Can you guarantee we'll appear in AI search results?",
+        "answer": "No tool can guarantee AI visibility — these systems are inherently non-deterministic. What we can guarantee: we'll show you exactly what AI platforms currently say about your brand, how you compare to competitors, and the most impactful steps to improve your visibility."
       }
     ]
   },
@@ -189,7 +189,7 @@
       "success": "Signed in successfully!",
       "resendVerification": "Resend verification email",
       "resendCooldown": "Resend in {seconds}s",
-      "noAccount": "Don\u0027t have an account?",
+      "noAccount": "Don't have an account?",
       "signUpLink": "Sign up",
       "errors": {
         "google": "Google sign-in failed. Please try again.",
@@ -240,11 +240,11 @@
     }
   },
   "CTA": {
-    "badge": "Start free, no credit card required",
-    "title": "Ready to Launch Your SaaS?",
-    "subtitle": "Get started with a production-ready template and ship your product in days, not months. Everything you need is already built in.",
-    "getStarted": "Get Started Free",
-    "seeDemo": "Live Demo"
+    "badge": "Free scan, no credit card required",
+    "title": "Ready to See Your AI Visibility?",
+    "subtitle": "Enter your domain and get a real-time AI brand report in under 10 seconds. No signup needed.",
+    "getStarted": "Scan My Brand Free",
+    "seeDemo": "View Sample Report"
   },
   "DashboardPages": {
     "dashboard": {
@@ -285,32 +285,17 @@
     "blog": "Blog",
     "about": "About",
     "productsMenu": {
-      "core": {
-        "title": "Core",
-        "auth": "Authentication",
-        "authDesc": "Multi-provider auth with session management",
-        "payments": "Payments",
-        "paymentsDesc": "Subscriptions and one-time purchases",
-        "credits": "Credits",
-        "creditsDesc": "Double-entry bookkeeping with FIFO expiration"
+      "monitor": {
+        "title": "Monitor",
+        "brandDetection": "Brand Detection",
+        "competitive": "Competitive Analysis",
+        "reports": "Weekly Reports"
       },
-      "dx": {
-        "title": "DX Platform",
-        "jobs": "Background Jobs",
-        "jobsDesc": "Async processing with Inngest",
-        "i18n": "Internationalization",
-        "i18nDesc": "Multi-language with next-intl",
-        "ai": "AI Integration",
-        "aiDesc": "Multi-model LLM abstraction"
-      },
-      "infra": {
-        "title": "Infrastructure",
-        "admin": "Admin Panel",
-        "adminDesc": "User and ticket management",
-        "storage": "File Storage",
-        "storageDesc": "S3/R2 cloud storage",
-        "monitoring": "Monitoring",
-        "monitoringDesc": "Logging and error tracking"
+      "improve": {
+        "title": "Improve",
+        "audit": "Readiness Audit",
+        "content": "Content Optimization",
+        "consulting": "Consulting"
       }
     }
   },
@@ -378,9 +363,9 @@
   },
   "Pricing": {
     "title": "Simple, transparent pricing",
-    "subtitle": "Pay by credits — <strong>never expire</strong>, so unused credits aren't wasted. Use credits for any metered feature in your app. Save 40% with yearly billing.",
-    "creditsUpfront": "all at once",
-    "creditsPerYear": "credits / year",
+    "subtitle": "Start with a free scan. Subscribe for continuous monitoring <strong>and competitor analysis</strong>. All plans include weekly reports and alert notifications.",
+    "creditsUpfront": "one-time",
+    "creditsPerYear": "/ year",
     "monthly": "Monthly",
     "yearly": "Yearly",
     "save": "Save",
@@ -388,83 +373,81 @@
     "currentPlan": "Current Plan",
     "alreadySubscribed": "Already Subscribed",
     "manageSubscription": "Manage Subscription",
-    "booksNote": "≈ {count} units of usage",
-    "cardsNote": "≈ {count} operations",
+    "booksNote": "≈ {count} scans",
+    "cardsNote": "≈ {count} keywords",
     "plans": {
       "free": {
         "name": "Free",
-        "description": "Try the platform with no commitment",
-        "cta": "Get Started",
-        "creditsAmount": "200",
-        "creditsLabel": "credits",
+        "description": "Try a brand scan with no commitment",
+        "cta": "Free Scan",
+        "creditsAmount": "1",
+        "creditsLabel": "free scan",
         "creditsNote": "one-time",
         "features": {
-          "creditsNeverExpire": "Credits never expire",
-          "credits": "200 credits (one-time)",
-          "input": "Core features access",
-          "characters": "Standard usage limits",
-          "fileSize": "Max 5MB file size",
-          "export": "Data export",
-          "history": "History saved forever"
+          "creditsNeverExpire": "Instant brand visibility scan",
+          "credits": "5-8 key metrics",
+          "input": "Perplexity + ChatGPT coverage",
+          "characters": "No signup required",
+          "fileSize": "No historical data",
+          "export": "Shareable report link",
+          "history": "24h report access"
         }
       },
       "starter": {
-        "name": "Starter",
-        "description": "Great for getting started",
+        "name": "Basic",
+        "description": "For brands starting AI monitoring",
         "cta": "Subscribe",
-        "creditsAmount": "3,000",
-        "creditsLabel": "credits / month",
-        "booksCount": "8",
+        "creditsAmount": "$39",
+        "creditsLabel": "/ month",
+        "booksCount": "3",
         "features": {
-          "creditsNeverExpire": "Credits never expire",
-          "credits": "3,000 credits / month",
-          "input": "Core features access",
-          "characters": "Standard usage limits",
-          "fileSize": "Max 20MB file size",
-          "export": "Data export",
-          "history": "History saved forever",
-          "support": "Email support"
+          "creditsNeverExpire": "3 keywords monitored",
+          "credits": "Weekly automated reports",
+          "input": "Perplexity + ChatGPT coverage",
+          "characters": "90-day trend history",
+          "fileSize": "Email report delivery",
+          "export": "Alert notifications",
+          "history": "Basic support"
         }
       },
       "pro": {
         "name": "Pro",
-        "description": "Best value for growing projects",
+        "description": "Best value for growing brands",
         "cta": "Subscribe",
-        "creditsAmount": "8,000",
-        "creditsLabel": "credits / month",
-        "booksCount": "23",
+        "creditsAmount": "$99",
+        "creditsLabel": "/ month",
+        "booksCount": "10",
         "features": {
-          "creditsNeverExpire": "Credits never expire",
-          "credits": "8,000 credits / month",
-          "input": "All features unlocked",
-          "characters": "Extended usage limits",
-          "fileSize": "Max 50MB file size",
-          "queue": "Priority processing queue",
-          "export": "Data export",
-          "history": "History saved forever",
-          "customCards": "Custom integrations (coming soon)",
-          "support": "Priority support"
+          "creditsNeverExpire": "10 keywords monitored",
+          "credits": "Weekly + monthly reports",
+          "input": "All AI platforms covered",
+          "characters": "12-month trend history",
+          "fileSize": "Competitive analysis (3 brands)",
+          "queue": "Technical readiness audit",
+          "export": "Priority email + in-app alerts",
+          "history": "Priority support",
+          "customCards": "Custom report branding"
         }
       },
       "ultra": {
-        "name": "Ultra",
-        "description": "For power users and teams",
+        "name": "Enterprise",
+        "description": "For agencies and large brands",
         "cta": "Subscribe",
-        "creditsAmount": "16,000",
-        "creditsLabel": "credits / month",
-        "booksCount": "46",
+        "creditsAmount": "$249",
+        "creditsLabel": "/ month",
+        "booksCount": "30",
         "features": {
-          "creditsNeverExpire": "Credits never expire",
-          "credits": "16,000 credits / month",
-          "input": "All features unlocked",
-          "characters": "Maximum usage limits",
-          "fileSize": "Max 100MB file size",
-          "queue": "Highest priority queue",
-          "export": "Data export",
-          "history": "History saved forever",
-          "customCards": "Custom integrations (coming soon)",
-          "aiAssist": "Advanced API access (coming soon)",
-          "support": "Dedicated support"
+          "creditsNeverExpire": "30 keywords monitored",
+          "credits": "Daily + weekly + monthly reports",
+          "input": "All AI platforms + custom",
+          "characters": "Unlimited trend history",
+          "fileSize": "Unlimited competitive analysis",
+          "queue": "Full readiness audit suite",
+          "export": "API access",
+          "history": "Dedicated account manager",
+          "customCards": "White-label reporting",
+          "aiAssist": "Consulting credits included",
+          "support": "SLA support"
         }
       }
     }
@@ -472,9 +455,9 @@
   "Subscription": {
     "plans": {
       "free": "Free",
-      "starter": "Starter",
+      "starter": "Basic",
       "pro": "Pro",
-      "ultra": "Ultra"
+      "ultra": "Enterprise"
     }
   },
   "Dashboard": {
@@ -577,11 +560,11 @@
         "description": "Manage your subscription and billing cycle.",
         "freePlan": "Free Plan",
         "current": "Current",
-        "basicFeatures": "Basic features with limited credits",
-        "premiumFeatures": "Full access to all premium features",
+        "basicFeatures": "Basic features with limited keywords",
+        "premiumFeatures": "Full access to all monitoring features",
         "upgradePlan": "Upgrade Plan",
         "managePlan": "Manage Plan",
-        "monthlyCredits": "Monthly Credits",
+        "monthlyCredits": "Monthly Keywords",
         "renewalDate": "Renewal Date",
         "notApplicable": "N/A",
         "price": "Price",
@@ -602,7 +585,7 @@
         "description": "Add or manage your payment methods for subscriptions and purchases.",
         "addMethod": "Add Payment Method",
         "noMethods": "No payment methods added",
-        "noMethodsHint": "Add a payment method to upgrade your plan or purchase credits"
+        "noMethodsHint": "Add a payment method to upgrade your plan"
       },
       "history": {
         "title": "Billing History",
@@ -617,30 +600,30 @@
       }
     },
     "usage": {
-      "title": "Compute Credit Usage",
-      "description": "Credits used for AI dialogue, image and etc.",
-      "availableCredits": "Available Credits",
-      "creditsAvailable": "credits available",
+      "title": "Monitoring Usage",
+      "description": "Keywords monitored and scans used this month.",
+      "availableCredits": "Available Scans",
+      "creditsAvailable": "scans available",
       "getMoreCredits": {
-        "title": "Get More Credits",
-        "description": "Subscribe to a plan to get monthly credits and unlock advanced features",
+        "title": "Get More Keywords",
+        "description": "Subscribe to a plan to monitor more keywords and unlock competitive analysis",
         "viewPlans": "View Subscription Plans"
       },
       "expiringSoon": {
-        "title": "Credits Expiring Soon",
-        "message": "{count} credits will expire on {date}"
+        "title": "Scans Expiring Soon",
+        "message": "{count} scans will expire on {date}"
       },
       "transactions": {
-        "title": "Transaction History",
-        "description": "View all your credit transactions including grants and consumption",
+        "title": "Activity History",
+        "description": "View all your monitoring activity and scan history",
         "date": "Date",
         "type": "Type",
         "transactionDescription": "Description",
         "transactionAmount": "Amount",
-        "noTransactions": "No transactions yet",
-        "noTransactionsHint": "Your credit transactions will appear here",
+        "noTransactions": "No activity yet",
+        "noTransactionsHint": "Your monitoring activity will appear here",
         "loading": "Loading...",
-        "showing": "Showing {from} to {to} of {total} transactions",
+        "showing": "Showing {from} to {to} of {total} activities",
         "rowsPerPage": "Rows per page",
         "pageOf": "Page {page} of {total}",
         "types": {
@@ -648,18 +631,18 @@
           "admin_grant": "Admin Grant",
           "monthly_grant": "Monthly Grant",
           "purchase": "Purchase",
-          "consumption": "Usage",
+          "consumption": "Scan",
           "expiration": "Expired",
           "refund": "Refund"
         },
         "descriptions": {
           "registration_bonus": "New user registration bonus",
-          "monthly_grant": "{plan} monthly subscription credits",
-          "yearly_grant": "{plan} yearly subscription credits ({monthly} x 12)",
-          "consumption": "Credit consumption",
-          "expiration": "Credits expired",
-          "admin_grant": "Admin granted credits",
-          "refund": "Credits refund"
+          "monthly_grant": "{plan} monthly subscription scans",
+          "yearly_grant": "{plan} yearly subscription scans ({monthly} x 12)",
+          "consumption": "Brand scan used",
+          "expiration": "Scans expired",
+          "admin_grant": "Admin granted scans",
+          "refund": "Scans refund"
         }
       }
     }

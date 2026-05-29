@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { siteConfig } from "@/config";
 import { SiteJsonLd, SoftwareAppJsonLd } from "@/components/seo/json-ld";
+import { DetectionDemo } from "@/features/detection";
 import {
   CTASection,
   FAQSection,
@@ -25,25 +26,24 @@ export async function generateMetadata({
   const isZh = locale === "zh";
 
   const title = isZh
-    ? "NextDevTpl - 生产就绪的 Next.js SaaS 模板"
-    : "NextDevTpl - Production-ready Next.js SaaS Template";
+    ? "mairror - AI 品牌可见性监测"
+    : "mairror - AI Brand Visibility Monitoring";
 
   const description = isZh
-    ? "使用AI技术将文本、PDF、网页、视频等内容自动转换为Anki兼容的闪卡。支持多种输入格式，一键导出.apkg文件，让学习更高效。"
-    : "AI-powered flashcard generator that converts text, PDFs, URLs, and videos into Anki-compatible study cards. Multiple input formats supported with one-click .apkg export.";
+    ? "输入你的域名，10秒内获取 AI 可见性报告。了解 ChatGPT、Perplexity 等 AI 平台如何描述你的品牌，追踪竞品变化，获取可执行的优化方案。"
+    : "Enter your domain and get an AI visibility report in under 10 seconds. See how ChatGPT, Perplexity, and other AI platforms describe your brand, track competitors, and get actionable improvement plans.";
 
   return {
     title,
     description,
     keywords: [
-      "AI flashcard generator",
-      "Anki cards",
-      "study cards",
-      "spaced repetition",
-      "PDF to flashcards",
-      "text to Anki",
+      "AI visibility",
+      "brand monitoring",
+      "AI search",
+      "Perplexity optimization",
+      "AI brand audit",
       ...(isZh
-        ? ["AI闪卡生成器", "Anki卡片", "间隔重复", "PDF转闪卡"]
+        ? ["AI可见性", "品牌监测", "AI搜索引擎", "品牌审计"]
         : []),
     ],
     openGraph: {
@@ -85,6 +85,19 @@ export default async function HomePage({
 
       {/* Page Sections */}
       <HeroSection />
+      <section className="py-16 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold tracking-tight mb-3">
+              免费检测你的 AI 可见性
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              输入域名，10 秒内查看品牌在 AI 平台的表现
+            </p>
+          </div>
+          <DetectionDemo />
+        </div>
+      </section>
       <FeatureGrid />
       <HowItWorks />
       <UseCasesSection />

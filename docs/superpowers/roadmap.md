@@ -12,7 +12,7 @@
 
 | ID | Milestone | Goal | Status | Priority | Depends On | Evidence |
 |----|-----------|------|--------|----------|------------|----------|
-| M1 | 免费检测工具 + Landing Page | 用户输入域名 → 实时返回可见性指标，作为获客漏斗入口 | planned | P0 | — | — |
+| M1 | 免费检测工具 + Landing Page | 用户输入域名 → 实时返回可见性指标，作为获客漏斗入口 | active | P0 | — | M1-1 品牌重塑完成 (commit f4ba4d0, dea8a45) |
 | M2 | 用户系统 + 支付集成 | 注册/登录、OAuth、订阅支付（复用 NextDevTpl） | planned | P0 | M1 | — |
 | M3 | 品牌监测引擎 | 关键词设定、周期监测、结果存储、趋势分析 | planned | P0 | M2 | — |
 | M4 | 周报 + 通知系统 | 邮件周报、站内通知、异常告警 | planned | P1 | M3 | — |
@@ -22,7 +22,7 @@
 
 ## Active Work
 
-- None yet.
+- **M1: 免费检测工具 + Landing Page** — Step 1/3: 品牌重塑完成，Step 2/3: 免费检测工具开发中
 
 ## Next Recommended Steps
 
@@ -71,6 +71,7 @@
 
 ## Recent Progress
 
+- 2026-05-29: M1-1 品牌重塑完成 — site config, i18n messages(89节重写), nav, logo, pricing
 - 2026-05-29: 需求文档完成（docs/requirements.md），明确产品定位、功能范围、MVP 路线
 - 2026-05-29: Git 仓库初始化，基于 NextDevTpl 代码库
 - 2026-05-29: 项目 Roadmap 创建

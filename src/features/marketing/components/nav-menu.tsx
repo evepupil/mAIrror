@@ -21,31 +21,17 @@ import { cn } from "@/lib/utils";
  * 用 i18n key 映射标题和描述
  */
 const productsTitleMap: Record<string, string> = {
-  Core: "productsMenu.core.title",
-  "DX Platform": "productsMenu.dx.title",
-  Infrastructure: "productsMenu.infra.title",
-  Authentication: "productsMenu.core.auth",
-  Payments: "productsMenu.core.payments",
-  Credits: "productsMenu.core.credits",
-  "Background Jobs": "productsMenu.dx.jobs",
-  Internationalization: "productsMenu.dx.i18n",
-  "AI Integration": "productsMenu.dx.ai",
-  "Admin Panel": "productsMenu.infra.admin",
-  "File Storage": "productsMenu.infra.storage",
-  Monitoring: "productsMenu.infra.monitoring",
+  Monitor: "productsMenu.monitor.title",
+  Improve: "productsMenu.improve.title",
+  "Brand Detection": "productsMenu.monitor.brandDetection",
+  "Competitive Analysis": "productsMenu.monitor.competitive",
+  "Weekly Reports": "productsMenu.monitor.reports",
+  "Readiness Audit": "productsMenu.improve.audit",
+  "Content Optimization": "productsMenu.improve.content",
+  Consulting: "productsMenu.improve.consulting",
 };
 
-const productsDescMap: Record<string, string> = {
-  Authentication: "productsMenu.core.authDesc",
-  Payments: "productsMenu.core.paymentsDesc",
-  Credits: "productsMenu.core.creditsDesc",
-  "Background Jobs": "productsMenu.dx.jobsDesc",
-  Internationalization: "productsMenu.dx.i18nDesc",
-  "AI Integration": "productsMenu.dx.aiDesc",
-  "Admin Panel": "productsMenu.infra.adminDesc",
-  "File Storage": "productsMenu.infra.storageDesc",
-  Monitoring: "productsMenu.infra.monitoringDesc",
-};
+const productsDescMap: Record<string, string> = {};
 
 /**
  * 导航菜单组件
@@ -61,7 +47,6 @@ export function NavMenu() {
 
   const navTitleMap: Record<string, string> = {
     Docs: t("docs"),
-    PSEO: t("pseo"),
     Pricing: t("pricing"),
     Blog: t("blog"),
   };
@@ -180,7 +165,7 @@ export function NavMenu() {
                                   <div className="text-xs text-muted-foreground">
                                     {t(
                                       productsDescMap[item.title] ||
-                                        item.title,
+                                        item.description,
                                     )}
                                   </div>
                                 </div>
